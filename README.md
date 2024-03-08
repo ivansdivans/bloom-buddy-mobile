@@ -12,7 +12,7 @@
 4. Design patterns - [Model-View-ViewModel](https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm)
 5. Development conventions - keep `main` ready-to-deploy at all times; use [feature-flags](https://martinfowler.com/articles/feature-toggles.html) for potentially breaking changes
 6. Testing strategy - meaningful unit tests for each feature and bugfix
-7. Merging policy - mandatory MR, build and unit tests are green, 1 approval; no force pushes
+7. Merging policy - mandatory PR, build and unit tests are green, 1 approval; no force pushes
 
 ## Credits
 
