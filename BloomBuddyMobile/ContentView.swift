@@ -13,13 +13,20 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            CareScheduleView()
+                .tabItem {
+                    Label("Care schedule", systemImage: "calendar")
+                }
+            HouseholdView()
+                .tabItem {
+                    Label("Household", systemImage: "house")
+                }
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
         }
-        .padding()
     }
     
 // MARK: body implementation for SwiftData
