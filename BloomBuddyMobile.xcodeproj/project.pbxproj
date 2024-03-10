@@ -90,8 +90,8 @@
 		A97907442B9E3CA10084C2D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
+				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */,
 				A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */,
 			);
