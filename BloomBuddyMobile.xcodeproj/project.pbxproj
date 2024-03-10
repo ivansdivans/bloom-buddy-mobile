@@ -74,6 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A97907432B9E3C940084C2D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A97907442B9E3CA10084C2D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A97907452B9E3CA60084C2D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A9F399FA2B8CB00900432EE1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,9 @@
 		A9F39A052B8CB00900432EE1 /* BloomBuddyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				A97907432B9E3C940084C2D4 /* Model */,
+				A97907442B9E3CA10084C2D4 /* View */,
+				A97907452B9E3CA60084C2D4 /* ViewModel */,
 				A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */,
 				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A9F39A0A2B8CB00900432EE1 /* Item.swift */,
