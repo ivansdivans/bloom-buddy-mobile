@@ -11,7 +11,6 @@
 |   #   | File  |
 | ----- | ----- |
 |   1   | replace_with_file |
-|   2   | replace_with_file |
 
 ## 👮🏻‍♂️ Check yourself
 
