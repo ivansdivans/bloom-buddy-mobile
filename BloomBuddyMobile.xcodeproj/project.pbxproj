@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF597E32BA2110F007065DE /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E22BA2110F007065DE /* Household.swift */; };
+		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
+		1FF597E82BA212DE007065DE /* SunlightLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E72BA212DE007065DE /* SunlightLevel.swift */; };
+		1FF597EF2BA216D5007065DE /* HouseholdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */; };
+		1FF597F22BA25D0A007065DE /* PlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F12BA25D0A007065DE /* PlantsView.swift */; };
+		1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F82BA2F784007065DE /* PropertyError.swift */; };
+		1FF597FB2BA30FE7007065DE /* HouseholdEditSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */; };
+		1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */; };
 		A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */; };
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
@@ -38,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FF597E22BA2110F007065DE /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
+		1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdConfiguration.swift; sourceTree = "<group>"; };
+		1FF597E72BA212DE007065DE /* SunlightLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunlightLevel.swift; sourceTree = "<group>"; };
+		1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModel.swift; sourceTree = "<group>"; };
+		1FF597F12BA25D0A007065DE /* PlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsView.swift; sourceTree = "<group>"; };
+		1FF597F82BA2F784007065DE /* PropertyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyError.swift; sourceTree = "<group>"; };
+		1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditSheetView.swift; sourceTree = "<group>"; };
+		1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditConfigurationView.swift; sourceTree = "<group>"; };
 		A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleView.swift; sourceTree = "<group>"; };
 		A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -80,29 +96,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A97907432B9E3C940084C2D4 /* Model */ = {
+		1FF597E12BA21102007065DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1FF597E62BA212A6007065DE /* Household */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1FF597E62BA212A6007065DE /* Household */ = {
+			isa = PBXGroup;
+			children = (
+				1FF597E22BA2110F007065DE /* Household.swift */,
+				1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */,
+				1FF597E72BA212DE007065DE /* SunlightLevel.swift */,
+			);
+			path = Household;
+			sourceTree = "<group>";
+		};
+		1FF597ED2BA216C6007065DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FF597F02BA25CE8007065DE /* Household */ = {
+			isa = PBXGroup;
+			children = (
+				A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */,
+				1FF597F12BA25D0A007065DE /* PlantsView.swift */,
+				1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */,
+				1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */,
+			);
+			path = Household;
+			sourceTree = "<group>";
+		};
+		1FF597F72BA2F74B007065DE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				1FF597F82BA2F784007065DE /* PropertyError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		A97907442B9E3CA10084C2D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FF597F02BA25CE8007065DE /* Household */,
 				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
 				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
-				A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */,
 				A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A97907452B9E3CA60084C2D4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A9F399FA2B8CB00900432EE1 = {
@@ -128,9 +175,10 @@
 		A9F39A052B8CB00900432EE1 /* BloomBuddyMobile */ = {
 			isa = PBXGroup;
 			children = (
-				A97907432B9E3C940084C2D4 /* Model */,
+				1FF597F72BA2F74B007065DE /* Errors */,
+				1FF597ED2BA216C6007065DE /* ViewModel */,
+				1FF597E12BA21102007065DE /* Model */,
 				A97907442B9E3CA10084C2D4 /* View */,
-				A97907452B9E3CA60084C2D4 /* ViewModel */,
 				A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */,
 				A9F39A0A2B8CB00900432EE1 /* Item.swift */,
 				A9F39A0C2B8CB00B00432EE1 /* Assets.xcassets */,
@@ -295,10 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF597E82BA212DE007065DE /* SunlightLevel.swift in Sources */,
 				A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */,
+				1FF597FB2BA30FE7007065DE /* HouseholdEditSheetView.swift in Sources */,
+				1FF597EF2BA216D5007065DE /* HouseholdViewModel.swift in Sources */,
 				A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */,
+				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
+				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
+				1FF597F22BA25D0A007065DE /* PlantsView.swift in Sources */,
+				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
+				1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */,
 				A9F39A0B2B8CB00900432EE1 /* Item.swift in Sources */,
 				A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */,
 			);
@@ -460,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BloomBuddyMobile/Preview Content\"";
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -498,7 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BloomBuddyMobile/Preview Content\"";
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
