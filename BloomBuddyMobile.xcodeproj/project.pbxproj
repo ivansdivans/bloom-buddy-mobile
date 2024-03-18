@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */; };
 		1FF597E32BA2110F007065DE /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E22BA2110F007065DE /* Household.swift */; };
 		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
 		1FF597E82BA212DE007065DE /* SunlightLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E72BA212DE007065DE /* SunlightLevel.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModelTests.swift; sourceTree = "<group>"; };
 		1FF597E22BA2110F007065DE /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
 		1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdConfiguration.swift; sourceTree = "<group>"; };
 		1FF597E72BA212DE007065DE /* SunlightLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunlightLevel.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F39A1A2B8CB00B00432EE1 /* BloomBuddyMobileTests.swift */,
+				1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */,
 			);
 			path = BloomBuddyMobileTests;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */,
 				A9F39A1B2B8CB00B00432EE1 /* BloomBuddyMobileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,7 +590,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -609,7 +613,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -631,7 +635,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -653,7 +657,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PK787V25R6;
+				DEVELOPMENT_TEAM = K3K4F337YV;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;

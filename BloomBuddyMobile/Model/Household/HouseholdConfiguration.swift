@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HouseholdConfiguration {
+struct HouseholdConfiguration: Equatable {
     var sunlight: SunlightLevel = .average
     var airQuality: Int = 0
     var humidity: Int = 0
