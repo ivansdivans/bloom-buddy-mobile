@@ -1,5 +1,5 @@
 //
-//  PlantsView.swift
+//  PlantsGridView.swift
 //  BloomBuddyMobile
 //
 //  Created by Daan Brocatus on 13/03/2024.
