@@ -25,7 +25,7 @@ class HouseholdViewModel: ObservableObject {
             case .outOfRange(let msg):
                 errorMessage = msg
                 showError = true
-            case .notFound(_), .alreadyExists(_):
+            default:
                 print("An unexpected error occurred: \(error)")
             }
         } catch {
@@ -52,7 +52,7 @@ class HouseholdViewModel: ObservableObject {
             case .outOfRange(let msg), .alreadyExists(let msg):
                 errorMessage = msg
                 showError = true
-            case .notFound(_):
+            default:
                 print("An unexpected error occurred: \(error)")
             }
         } catch {
@@ -82,7 +82,7 @@ class HouseholdViewModel: ObservableObject {
             case .notFound(let msg):
                 errorMessage = msg
                 showError = true
-            case .outOfRange(_), .alreadyExists(_):
+            default:
                 print("An unexpected error occurred: \(error)")
             }
         } catch {
