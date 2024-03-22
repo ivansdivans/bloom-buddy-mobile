@@ -45,7 +45,7 @@ struct HouseholdView: View {
                     })
                 }
             }
-            PlantsView(plants: viewModel.household.plants, isRemoving: $isRemoving, removePlant: viewModel.removePlant)
+            PlantsGridView(plants: viewModel.household.plants, isRemoving: $isRemoving, removePlant: viewModel.removePlant)
             Spacer()
             Button(action: {
                 isAdding.toggle()

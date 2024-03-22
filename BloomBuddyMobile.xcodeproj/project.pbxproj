@@ -12,7 +12,7 @@
 		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
 		1FF597E82BA212DE007065DE /* SunlightLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E72BA212DE007065DE /* SunlightLevel.swift */; };
 		1FF597EF2BA216D5007065DE /* HouseholdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */; };
-		1FF597F22BA25D0A007065DE /* PlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F12BA25D0A007065DE /* PlantsView.swift */; };
+		1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F12BA25D0A007065DE /* PlantsGridView.swift */; };
 		1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F82BA2F784007065DE /* PropertyError.swift */; };
 		1FF597FB2BA30FE7007065DE /* HouseholdEditSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */; };
 		1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */; };
@@ -51,7 +51,7 @@
 		1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdConfiguration.swift; sourceTree = "<group>"; };
 		1FF597E72BA212DE007065DE /* SunlightLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunlightLevel.swift; sourceTree = "<group>"; };
 		1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModel.swift; sourceTree = "<group>"; };
-		1FF597F12BA25D0A007065DE /* PlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsView.swift; sourceTree = "<group>"; };
+		1FF597F12BA25D0A007065DE /* PlantsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsGridView.swift; sourceTree = "<group>"; };
 		1FF597F82BA2F784007065DE /* PropertyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyError.swift; sourceTree = "<group>"; };
 		1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditSheetView.swift; sourceTree = "<group>"; };
 		1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditConfigurationView.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */,
-				1FF597F12BA25D0A007065DE /* PlantsView.swift */,
+				1FF597F12BA25D0A007065DE /* PlantsGridView.swift */,
 				1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */,
 				1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */,
 			);
@@ -352,7 +352,7 @@
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
-				1FF597F22BA25D0A007065DE /* PlantsView.swift in Sources */,
+				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
 				1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */,
 				A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */,

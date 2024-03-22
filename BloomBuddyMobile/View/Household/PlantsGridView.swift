@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlantsView: View {
+struct PlantsGridView: View {
     var plants: [String] = []
     @Binding var isRemoving: Bool
     var removePlant: (String) -> Void
