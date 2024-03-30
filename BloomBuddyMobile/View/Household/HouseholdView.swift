@@ -11,7 +11,6 @@ struct HouseholdView: View {
     @ObservedObject private var viewModel = HouseholdViewModel()
     @State private var isRemoving = false
     @State private var isAdding = false
-    @State private var isEditing = false
     @State private var newName = ""
     
     var body: some View {
@@ -31,7 +30,7 @@ struct HouseholdView: View {
                 }
                 HStack {
                     Button(action: {
-                        isEditing.toggle()
+                        viewModel.isConfiguring.toggle()
                     }, label: {
                         Image(systemName: "slider.horizontal.3")
                             .foregroundColor(.primary)
@@ -65,9 +64,9 @@ struct HouseholdView: View {
             .padding(.horizontal, 10)
         }
         .padding(10)
-        .sheet(isPresented: $isEditing) {
+        .sheet(isPresented: $viewModel.isConfiguring) {
             HouseholdEditSheetView(
-                isPresented: $isEditing,
+                isPresented: $viewModel.isConfiguring,
                 newName: viewModel.household.name,
                 changeName: viewModel.changeName,
                 changeConfiguration: viewModel.changeConfiguration,

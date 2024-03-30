@@ -12,6 +12,14 @@ class HouseholdViewModel: ObservableObject {
     @Published var household: Household = Household()
     @Published var showError = false
     @Published var errorMessage = ""
+    @Published var isConfiguring = false
+    
+    init() {
+        if (!UserDefaults.standard.bool(forKey: Constants.FirstTimeVisit.doneKey)) {
+            self.isConfiguring = true
+            UserDefaults.standard.setValue(true, forKey: Constants.FirstTimeVisit.doneKey)
+        }
+    }
     
     func changeConfiguration(_ config: HouseholdConfiguration) {
         household.configuration = config
@@ -31,7 +39,6 @@ class HouseholdViewModel: ObservableObject {
         } catch {
             print("An unexpected error occurred: \(error)")
         }
-        print(household.name)
     }
     
     func _changeName(_ name: String) throws {
