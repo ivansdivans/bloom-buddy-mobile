@@ -9,7 +9,7 @@ import Foundation
 
 struct HouseholdConfiguration: Equatable {
     var sunlight: SunlightLevel = .average
-    var airQuality: Int = 0
-    var humidity: Int = 0
-    var averageTemperature: Int = 10
+    var airQuality: Int = 40
+    var humidity: Int = 77
+    var averageTemperature: Int = 20
 }
