@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F61365F2BB856440048813F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61365E2BB856440048813F /* Constants.swift */; };
+		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */;
 		1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */; };
 		1FF597E32BA2110F007065DE /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E22BA2110F007065DE /* Household.swift */; };
 		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1F61365E2BB856440048813F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BloomBuddyMLV1.mlmodel; sourceTree = "<group>"; };
 		1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModelTests.swift; sourceTree = "<group>"; };
 		1FF597E22BA2110F007065DE /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
 		1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdConfiguration.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7BBE8B2BBEA55300B6B906 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
 		1FF597E12BA21102007065DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 		A9F39A052B8CB00900432EE1 /* BloomBuddyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				1F7BBE8B2BBEA55300B6B906 /* MLModels */,
 				1FF597F72BA2F74B007065DE /* Errors */,
 				1FF597ED2BA216C6007065DE /* ViewModel */,
 				1FF597E12BA21102007065DE /* Model */,
@@ -355,6 +366,7 @@
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
+				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
 				1F61365F2BB856440048813F /* Constants.swift in Sources */,
