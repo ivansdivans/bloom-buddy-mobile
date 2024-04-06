@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F61365F2BB856440048813F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61365E2BB856440048813F /* Constants.swift */; };
-		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */;
+		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
 		1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */; };
 		1FF597E32BA2110F007065DE /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E22BA2110F007065DE /* Household.swift */; };
 		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
