@@ -166,12 +166,20 @@
 		A97907442B9E3CA10084C2D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9DBE6B22BC3288B001EA129 /* CareSchedule */,
 				1FF597F02BA25CE8007065DE /* Household */,
-				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
 				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A9DBE6B22BC3288B001EA129 /* CareSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
+			);
+			path = CareSchedule;
 			sourceTree = "<group>";
 		};
 		A9F399FA2B8CB00900432EE1 = {
