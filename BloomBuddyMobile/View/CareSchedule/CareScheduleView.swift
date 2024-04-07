@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CareScheduleView: View {
+    @ObservedObject private var viewModel = CareScheduleViewModel()
+    
     var body: some View {
         Text("My Care Schedule")
     }

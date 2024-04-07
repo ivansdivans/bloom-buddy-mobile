@@ -25,6 +25,7 @@
 		A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */; };
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
+		A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */; };
 		A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */; };
 		A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A082B8CB00900432EE1 /* ContentView.swift */; };
 		A9F39A0D2B8CB00B00432EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F39A0C2B8CB00B00432EE1 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleView.swift; sourceTree = "<group>"; };
 		A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModel.swift; sourceTree = "<group>"; };
 		A9F39A032B8CB00900432EE1 /* BloomBuddyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloomBuddyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileApp.swift; sourceTree = "<group>"; };
 		A9F39A082B8CB00900432EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */,
+				A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
+				A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */,
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
 				1F61365F2BB856440048813F /* Constants.swift in Sources */,
