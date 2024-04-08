@@ -15,4 +15,10 @@ enum Constants {
     enum FirstTimeVisit {
         static let doneKey = "firstTimeVisitDoneKey"
     }
+    
+    enum Texts {
+        static let careScheduleTitle = "My Care Schedule"
+        static let careScheduleTodo = "To Do"
+        static let careScheduleCompleted = "Completed"
+    }
 }
