@@ -31,6 +31,7 @@ final class BloomBuddyMLTests: XCTestCase {
                 XCTAssertFalse(predictions.isEmpty)
                 XCTAssertEqual(predictions.count, Constants.MLModel.amountOfClasses)
                 XCTAssertTrue(predictions.first!.confidence > 0.9)
+                XCTAssertEqual(predictions.first!.label, "rose")
             }
             expectation.fulfill()
         }
