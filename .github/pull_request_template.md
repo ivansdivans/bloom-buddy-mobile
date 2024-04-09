@@ -4,7 +4,7 @@
 
 ## 🔗 Issue that is implemented here 
 
-- issue #replace_with_number
+- Closes #replace_with_number
 
 ## 📸 Screenshot or screen recording of working solution
 
