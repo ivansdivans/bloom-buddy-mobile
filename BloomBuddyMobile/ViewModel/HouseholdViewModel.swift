@@ -74,6 +74,10 @@ class HouseholdViewModel: ObservableObject {
             throw PropertyError.outOfRange("You can only have up to 5 plants!")
         }
         
+        guard (4...32).contains(nameToAdd.count) else {
+            throw PropertyError.outOfRange("Your plant name needs to be between 4 and 32 characters!")
+        }
+        
         guard !household.plants.contains(nameToAdd) else {
             throw PropertyError.alreadyExists("Plant with name \(nameToAdd) already exists!")
         }
