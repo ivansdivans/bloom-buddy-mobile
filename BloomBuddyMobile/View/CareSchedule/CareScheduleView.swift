@@ -10,7 +10,7 @@ import SwiftUI
 struct CareScheduleView: View {
     @ObservedObject private var viewModel = CareScheduleViewModel()
     @State var screenSize: CGSize = .zero
-
+    
     var body: some View {
         VStack {
             Text(Constants.Texts.careScheduleTitle)
@@ -28,38 +28,7 @@ struct CareScheduleView: View {
             Divider()
                 .padding(.bottom, 10)
             
-            ScrollView(.vertical, showsIndicators: false) {
-                // Replace with lists
-//                List(todos) { todo in
-//                    
-//                }
-                VStack {
-                    Text(Constants.Texts.careScheduleTodo)
-                        .font(.headline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    VStack {
-                        Text("Dummy todo item #1")
-                        Text("Dummy todo item #2")
-                        Text("Dummy todo item #3")
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                .padding(.bottom, 20)
-                
-                VStack {
-                    Text(Constants.Texts.careScheduleCompleted)
-                        .font(.headline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    VStack {
-                        Text("Dummy todo item #4")
-                        Text("Dummy todo item #5")
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                .padding(.bottom, 20)
-                
-                Spacer()
-            }
+            TodoListView(todos: viewModel.todos)
         }
         .padding(10)
         .overlay(

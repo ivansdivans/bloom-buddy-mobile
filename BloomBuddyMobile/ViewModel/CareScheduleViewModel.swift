@@ -9,6 +9,15 @@ import Foundation
 import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
+    // TODO: move to new file TodoListViewModel
+    @Published var todos: [TodoListItem] = [
+        TodoListItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
+        TodoListItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
+        TodoListItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
+        TodoListItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
+        TodoListItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
+    ]
+    
     let currentDate: Date = Date()
     
     func getCurrentMonthAndYear() -> String {
@@ -17,6 +26,7 @@ class CareScheduleViewModel: ObservableObject {
         return dateFormatter.string(from: currentDate)
     }
     
+    // TODO: move to new file WeekCalendarViewModel
     func getDaysOfCurrentWeek() -> [Date] {
         let calendar: Calendar = Calendar.current
         let startOfWeek = calendar.date(
