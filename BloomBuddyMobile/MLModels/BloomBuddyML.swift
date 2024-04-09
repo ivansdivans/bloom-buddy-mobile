@@ -29,33 +29,44 @@ class BloomBuddyML {
     ///     - _ image: The image to cast the predicion on.
     ///     - completion: The completion handler with the prediction results or nil.
     func classifyImage(_ image: UIImage, completion: @escaping ([Prediction]?) -> Void) {
-        guard let ciImage = CIImage(image: image) else {
-            completion(nil)
-            return
-        }
-        
-        guard let pixelBuffer = pixelBuffer(from: ciImage) else {
-            completion(nil)
-            return
-        }
-        
-        let input = BloomBuddyMLV1Input(image: pixelBuffer)
-        
-        do {
-            let output = try model.prediction(input: input)
-            let targetProbability = output.targetProbability
-            
-            var predictions: [Prediction] = []
-            for (label, confidence) in targetProbability {
-                let prediction = Prediction(label: label, confidence: confidence)
-                predictions.append(prediction)
+        DispatchQueue.global(qos: .userInitiated).async {
+            guard let ciImage = CIImage(image: image) else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
             }
             
-            predictions.sort { $0.confidence > $1.confidence }
+            guard let pixelBuffer = self.pixelBuffer(from: ciImage) else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
+            }
             
-            completion(predictions)
-        } catch {
-            print("Error: Failed to perform prediction - \(error)")
+            let input = BloomBuddyMLV1Input(image: pixelBuffer)
+            
+            do {
+                let output = try self.model.prediction(input: input)
+                let targetProbability = output.targetProbability
+                
+                var predictions: [Prediction] = []
+                for (label, confidence) in targetProbability {
+                    let prediction = Prediction(label: label, confidence: confidence)
+                    predictions.append(prediction)
+                }
+                
+                predictions.sort { $0.confidence > $1.confidence }
+                
+                DispatchQueue.main.async {
+                    completion(predictions)
+                }
+            } catch {
+                print("Error: Failed to perform prediction - \(error)")
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
         }
     }
     
