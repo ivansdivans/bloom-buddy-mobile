@@ -8,6 +8,10 @@
 import Foundation
 
 enum Constants {
+    enum MLModel {
+        static let amountOfClasses = 46
+    }
+    
     enum FirstTimeVisit {
         static let doneKey = "firstTimeVisitDoneKey"
     }

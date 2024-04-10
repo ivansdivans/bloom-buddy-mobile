@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1F61365F2BB856440048813F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61365E2BB856440048813F /* Constants.swift */; };
 		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
+		1FAB1FF62BC5599E00B26F3E /* BloomBuddyML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB1FF52BC5599E00B26F3E /* BloomBuddyML.swift */; };
+		1FAB1FF82BC55A8200B26F3E /* BloomBuddyMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB1FF72BC55A8200B26F3E /* BloomBuddyMLTests.swift */; };
+		1FAB1FFE2BC55D5600B26F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB1FFD2BC55D5600B26F3E /* Assets.xcassets */; };
+		1FAB20002BC5600400B26F3E /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB1FFF2BC5600400B26F3E /* Prediction.swift */; };
 		1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */; };
 		1FF597E32BA2110F007065DE /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E22BA2110F007065DE /* Household.swift */; };
 		1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		1F61365E2BB856440048813F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BloomBuddyMLV1.mlmodel; sourceTree = "<group>"; };
+		1FAB1FF52BC5599E00B26F3E /* BloomBuddyML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyML.swift; sourceTree = "<group>"; };
+		1FAB1FF72BC55A8200B26F3E /* BloomBuddyMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMLTests.swift; sourceTree = "<group>"; };
+		1FAB1FFD2BC55D5600B26F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FAB1FFF2BC5600400B26F3E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModelTests.swift; sourceTree = "<group>"; };
 		1FF597E22BA2110F007065DE /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
 		1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdConfiguration.swift; sourceTree = "<group>"; };
@@ -104,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */,
+				1FAB1FF52BC5599E00B26F3E /* BloomBuddyML.swift */,
+				1FAB1FFF2BC5600400B26F3E /* Prediction.swift */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -214,6 +224,8 @@
 			children = (
 				A9F39A1A2B8CB00B00432EE1 /* BloomBuddyMobileTests.swift */,
 				1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */,
+				1FAB1FF72BC55A8200B26F3E /* BloomBuddyMLTests.swift */,
+				1FAB1FFD2BC55D5600B26F3E /* Assets.xcassets */,
 			);
 			path = BloomBuddyMobileTests;
 			sourceTree = "<group>";
@@ -340,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAB1FFE2BC55D5600B26F3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +377,8 @@
 				A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */,
 				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
+				1FAB20002BC5600400B26F3E /* Prediction.swift in Sources */,
+				1FAB1FF62BC5599E00B26F3E /* BloomBuddyML.swift in Sources */,
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
@@ -381,6 +396,7 @@
 			files = (
 				1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */,
 				A9F39A1B2B8CB00B00432EE1 /* BloomBuddyMobileTests.swift in Sources */,
+				1FAB1FF82BC55A8200B26F3E /* BloomBuddyMLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,12 +626,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3K4F337YV;
+				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivansdivans.BloomBuddyMobileTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediaan.BloomBuddyMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -633,12 +649,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3K4F337YV;
+				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivansdivans.BloomBuddyMobileTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediaan.BloomBuddyMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -655,12 +671,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3K4F337YV;
+				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivansdivans.BloomBuddyMobileUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediaan.BloomBuddyMobileUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -677,12 +693,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3K4F337YV;
+				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivansdivans.BloomBuddyMobileUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediaan.BloomBuddyMobileUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
