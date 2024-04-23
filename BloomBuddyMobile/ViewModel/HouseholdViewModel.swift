@@ -7,12 +7,23 @@
 
 import Foundation
 import SwiftData
+import UIKit
 
 class HouseholdViewModel: ObservableObject {
+    private let mlModel = BloomBuddyML.shared
+    
     @Published var household: Household = Household()
     @Published var showError = false
     @Published var errorMessage = ""
     @Published var isConfiguring = false
+    @Published var selectedImage: UIImage? {
+        didSet {
+            guard let image = selectedImage else { return }
+            mlModel.classifyImage(image) { predictions in
+                self.addPlant(predictions!.first!.label)
+            }
+        }
+    }
     
     init() {
         if (!UserDefaults.standard.bool(forKey: Constants.FirstTimeVisit.doneKey)) {

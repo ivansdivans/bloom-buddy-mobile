@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F46205B2BD6884E003975F5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46205A2BD6884E003975F5 /* ImagePicker.swift */; };
 		1F61365F2BB856440048813F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61365E2BB856440048813F /* Constants.swift */; };
 		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
 		1FAB1FF62BC5599E00B26F3E /* BloomBuddyML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB1FF52BC5599E00B26F3E /* BloomBuddyML.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F46205A2BD6884E003975F5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1F61365E2BB856440048813F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BloomBuddyMLV1.mlmodel; sourceTree = "<group>"; };
 		1FAB1FF52BC5599E00B26F3E /* BloomBuddyML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyML.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
 				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */,
+				1F46205A2BD6884E003975F5 /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				1FF597E82BA212DE007065DE /* SunlightLevel.swift in Sources */,
 				A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */,
 				1FF597FB2BA30FE7007065DE /* HouseholdEditSheetView.swift in Sources */,
+				1F46205B2BD6884E003975F5 /* ImagePicker.swift in Sources */,
 				1FF597EF2BA216D5007065DE /* HouseholdViewModel.swift in Sources */,
 				A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */,
 				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
