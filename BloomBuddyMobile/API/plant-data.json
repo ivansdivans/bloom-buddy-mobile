@@ -1,0 +1,15 @@
+[
+    {
+        "name": {
+            "internal": "rose",
+            "common": "Rose",
+            "scientific": "Rose rubiginosa"
+        },
+        "imageUrl": "https://harkness-roses.s3.amazonaws.com/700/530609.jpg",
+        "wateringFrequency": 1,
+        "description": "A rose is a flowering plant known for its fragrant blooms and thorny stems. It comes in various colors and forms and requires plenty of sunlight, well-drained soil, regular watering, and occasional pruning for healthy growth.",
+        "desiredTemperature": 21.5,
+        "careIntensity": 1,
+        "careTakingInstructions": "To take care of a potted rose, place it in a sunny spot, water it regularly, keeping the soil moist but not soggy, and fertilize it every few weeks during the growing season. Prune dead or damaged branches and remove faded flowers to encourage new growth."
+    }
+]

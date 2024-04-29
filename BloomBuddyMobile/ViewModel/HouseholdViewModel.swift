@@ -10,7 +10,8 @@ import SwiftData
 import UIKit
 
 class HouseholdViewModel: ObservableObject {
-    private let mlModel = BloomBuddyML.shared
+    private let mlModel: BloomBuddyML
+    private let api: API
     
     @Published var household: Household = Household()
     @Published var showError = false
@@ -20,12 +21,20 @@ class HouseholdViewModel: ObservableObject {
         didSet {
             guard let image = selectedImage else { return }
             mlModel.classifyImage(image) { predictions in
-                self.addPlant(predictions!.first!.label)
+                do {
+                    let plant = try self.api.getPlantByName(predictions!.first!.label)
+                    print(plant)
+                } catch {
+                    print(error)
+                }
             }
         }
     }
     
-    init() {
+    init(mlModel: BloomBuddyML = BloomBuddyML.shared, api: API = LocalJSONAPI()) {
+        self.mlModel = mlModel
+        self.api = api
+        
         if (!UserDefaults.standard.bool(forKey: Constants.FirstTimeVisit.doneKey)) {
             self.isConfiguring = true
             UserDefaults.standard.setValue(true, forKey: Constants.FirstTimeVisit.doneKey)
