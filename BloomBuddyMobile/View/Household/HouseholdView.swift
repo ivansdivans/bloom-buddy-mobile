@@ -67,6 +67,9 @@ struct HouseholdView: View {
                 currentConfiguration: viewModel.household.configuration
             )
         }
+        .sheet(isPresented: $viewModel.isAdding) {
+            PlantConfigurationSheet(isPresented: $viewModel.isAdding, plant: $viewModel.newPlant)
+        }
         .alert(isPresented: $viewModel.showError) { Alert(
             title: Text("Error"),
             message: Text(viewModel.errorMessage),

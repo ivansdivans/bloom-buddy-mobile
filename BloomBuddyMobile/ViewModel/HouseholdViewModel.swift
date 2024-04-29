@@ -17,13 +17,16 @@ class HouseholdViewModel: ObservableObject {
     @Published var showError = false
     @Published var errorMessage = ""
     @Published var isConfiguring = false
+    @Published var isAdding = false
+    @Published var newPlant: Plant!
     @Published var selectedImage: UIImage? {
         didSet {
             guard let image = selectedImage else { return }
             mlModel.classifyImage(image) { predictions in
                 do {
                     let plant = try self.api.getPlantByName(predictions!.first!.label)
-                    print(plant)
+                    self.newPlant = plant
+                    self.isAdding = true
                 } catch {
                     print(error)
                 }
