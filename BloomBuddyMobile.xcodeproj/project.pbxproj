@@ -16,6 +16,9 @@
 		1F6AE0222BDFCB57001C1361 /* PlantCareIntensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE0212BDFCB57001C1361 /* PlantCareIntensity.swift */; };
 		1F6AE0242BDFCBC7001C1361 /* PlantHealthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE0232BDFCBC7001C1361 /* PlantHealthStatus.swift */; };
 		1F6AE0272BDFDED3001C1361 /* PlantConfigurationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE0262BDFDED3001C1361 /* PlantConfigurationSheet.swift */; };
+		1F6AE02E2BE2340A001C1361 /* LabeledTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE02D2BE2340A001C1361 /* LabeledTextView.swift */; };
+		1F6AE0302BE236B6001C1361 /* LabeledTextAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE02F2BE236B6001C1361 /* LabeledTextAreaView.swift */; };
+		1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE0312BE23BF1001C1361 /* LabeledEnumPicker.swift */; };
 		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
 		1F83DA4C2BDA53B600429A48 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DA4B2BDA53B600429A48 /* Plant.swift */; };
 		1F83DA562BDA5BF400429A48 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DA552BDA5BF400429A48 /* API.swift */; };
@@ -72,6 +75,9 @@
 		1F6AE0212BDFCB57001C1361 /* PlantCareIntensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCareIntensity.swift; sourceTree = "<group>"; };
 		1F6AE0232BDFCBC7001C1361 /* PlantHealthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthStatus.swift; sourceTree = "<group>"; };
 		1F6AE0262BDFDED3001C1361 /* PlantConfigurationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantConfigurationSheet.swift; sourceTree = "<group>"; };
+		1F6AE02D2BE2340A001C1361 /* LabeledTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextView.swift; sourceTree = "<group>"; };
+		1F6AE02F2BE236B6001C1361 /* LabeledTextAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextAreaView.swift; sourceTree = "<group>"; };
+		1F6AE0312BE23BF1001C1361 /* LabeledEnumPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledEnumPicker.swift; sourceTree = "<group>"; };
 		1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BloomBuddyMLV1.mlmodel; sourceTree = "<group>"; };
 		1F83DA4B2BDA53B600429A48 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		1F83DA552BDA5BF400429A48 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -146,6 +152,27 @@
 			path = Plant;
 			sourceTree = "<group>";
 		};
+		1F6AE02C2BE2310E001C1361 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				1F83DA4B2BDA53B600429A48 /* Plant.swift */,
+				1F6AE01F2BDFCAC1001C1361 /* PlantWateringFrequency.swift */,
+				1F6AE0212BDFCB57001C1361 /* PlantCareIntensity.swift */,
+				1F6AE0232BDFCBC7001C1361 /* PlantHealthStatus.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		1F6AE0332BE24518001C1361 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1F6AE02D2BE2340A001C1361 /* LabeledTextView.swift */,
+				1F6AE02F2BE236B6001C1361 /* LabeledTextAreaView.swift */,
+				1F6AE0312BE23BF1001C1361 /* LabeledEnumPicker.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		1F7BBE8B2BBEA55300B6B906 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +197,7 @@
 		1FF597E12BA21102007065DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F6AE02C2BE2310E001C1361 /* Plant */,
 				1FF597E62BA212A6007065DE /* Household */,
 			);
 			path = Model;
@@ -181,10 +209,6 @@
 				1FF597E22BA2110F007065DE /* Household.swift */,
 				1FF597E42BA21282007065DE /* HouseholdConfiguration.swift */,
 				1FF597E72BA212DE007065DE /* SunlightLevel.swift */,
-				1F83DA4B2BDA53B600429A48 /* Plant.swift */,
-				1F6AE01F2BDFCAC1001C1361 /* PlantWateringFrequency.swift */,
-				1F6AE0212BDFCB57001C1361 /* PlantCareIntensity.swift */,
-				1F6AE0232BDFCBC7001C1361 /* PlantHealthStatus.swift */,
 			);
 			path = Household;
 			sourceTree = "<group>";
@@ -220,6 +244,7 @@
 		A97907442B9E3CA10084C2D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1F6AE0332BE24518001C1361 /* General */,
 				1F6AE0252BDFDEC2001C1361 /* Plant */,
 				1FF597F02BA25CE8007065DE /* Household */,
 				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
@@ -439,6 +464,7 @@
 				1F83DA582BDA734400429A48 /* LocalJSONAPI.swift in Sources */,
 				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
 				1F6AE01C2BDFC695001C1361 /* LocalJSONAPIModels.swift in Sources */,
+				1F6AE0302BE236B6001C1361 /* LabeledTextAreaView.swift in Sources */,
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
 				1FAB20002BC5600400B26F3E /* Prediction.swift in Sources */,
 				1F6AE0242BDFCBC7001C1361 /* PlantHealthStatus.swift in Sources */,
@@ -447,12 +473,14 @@
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
 				1F6AE0202BDFCAC1001C1361 /* PlantWateringFrequency.swift in Sources */,
+				1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
 				1F6AE0272BDFDED3001C1361 /* PlantConfigurationSheet.swift in Sources */,
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1F6AE0222BDFCB57001C1361 /* PlantCareIntensity.swift in Sources */,
 				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
 				1F61365F2BB856440048813F /* Constants.swift in Sources */,
+				1F6AE02E2BE2340A001C1361 /* LabeledTextView.swift in Sources */,
 				1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */,
 				A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */,
 			);

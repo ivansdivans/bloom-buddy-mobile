@@ -33,17 +33,7 @@ struct HouseholdEditConfigurationView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Sunlight:")
-                    .fontWeight(.bold)
-                Spacer()
-                Picker("Select level of sunlight", selection: $configuration.sunlight) {
-                    ForEach(SunlightLevel.allCases, id: \.self) { option in
-                        Text(option.displayText).tag(option)
-                    }
-                }
-                .pickerStyle(MenuPickerStyle())
-            }.padding(.vertical)
+            LabeledEnumPicker(label: "Sunlight", selection: $configuration.sunlight, options: SunlightLevel.allCases, displayText: { $0.displayText })
             VStack {
                 HStack {
                     Text("Air quality: \(configuration.airQuality) (AQI)")

@@ -39,8 +39,7 @@ class LocalJSONAPI: API {
     
     private func formatAPIPlants(_ apiPlants: [APIPlant]) -> [Plant] {
         let plants = apiPlants.map { apiPlant in
-            return Plant(nickName: nil,
-                         internalName: apiPlant.name.internalName,
+            return Plant(internalName: apiPlant.name.internalName,
                          commonName: apiPlant.name.commonName,
                          scientificName: apiPlant.name.scientificName,
                          imageUrl: apiPlant.imageUrl,

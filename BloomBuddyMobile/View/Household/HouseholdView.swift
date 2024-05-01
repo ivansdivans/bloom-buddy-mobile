@@ -68,7 +68,7 @@ struct HouseholdView: View {
             )
         }
         .sheet(isPresented: $viewModel.isAdding) {
-            PlantConfigurationSheet(isPresented: $viewModel.isAdding, plant: $viewModel.newPlant)
+            PlantConfigurationSheet(isPresented: $viewModel.isAdding, plant: $viewModel.newPlant, addPlant: viewModel.addPlant)
         }
         .alert(isPresented: $viewModel.showError) { Alert(
             title: Text("Error"),
