@@ -12,7 +12,7 @@ struct CareScheduleView: View {
     @State var screenSize: CGSize = .zero
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Text(Constants.Texts.careScheduleTitle)
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -23,10 +23,12 @@ struct CareScheduleView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.bottom, 10)
             
+            // TODO: make scrollable to previous/next week
             WeekCalendarView(screenSize: screenSize)
             .padding(.bottom, 10)
+            
             Divider()
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             
             TodoListView(todos: viewModel.todos)
         }
