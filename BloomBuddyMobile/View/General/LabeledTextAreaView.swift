@@ -12,14 +12,12 @@ struct LabeledTextAreaView: View {
     @Binding var text: String
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(label)
-                    .fontWeight(.bold)
-                Spacer()
-            }
+        VStack(alignment: .leading, spacing: 8) {
+            Text(label)
+                .fontWeight(.bold)
             TextEditor(text: $text)
-                .textFieldStyle(.roundedBorder)
-        }
+                .frame(minHeight: 100)
+                .padding(.all, 2)
+        }.padding(.vertical, 5)
     }
 }

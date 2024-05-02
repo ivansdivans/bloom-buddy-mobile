@@ -27,6 +27,7 @@ class HouseholdViewModel: ObservableObject {
                     let plant = try self.api.getPlantByName(predictions!.first!.label)
                     self.newPlant = plant
                     self.isAdding = true
+                    self.selectedImage = nil
                 } catch {
                     print(error)
                 }

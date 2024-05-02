@@ -36,7 +36,7 @@ struct PlantConfigurationSheet: View {
                     LabeledTextView(label: "Internal name", text: $plant.internalName)
                     LabeledTextView(label: "Common name", text: $plant.commonName)
                     LabeledTextView(label: "Scientific name", text: $plant.scientificName)
-                    Spacer(minLength: 20)
+                    Spacer(minLength: 15)
                     LabeledTextAreaView(label: "Image URL", text: $plant.imageUrl)
                     LabeledTextAreaView(label: "Description", text: $plant.description)
                     LabeledTextAreaView(label: "Caretaking instructions", text: $plant.careTakingInstructions)
@@ -48,9 +48,9 @@ struct PlantConfigurationSheet: View {
                         }
                         Slider(value: $plant.desiredTemperature, in: 10...30, step: 0.1)
                     }.padding(.vertical)
-                    LabeledEnumPicker(label: "Watering frequency:", selection: $plant.wateringFrequency, options: PlantWateringFrequency.allCases, displayText: { $0.displayText })
-                    LabeledEnumPicker(label: "Care intensity:", selection: $plant.careIntensity, options: PlantCareIntensity.allCases, displayText: { $0.displayText })
-                    LabeledEnumPicker(label: "Health status:", selection: $plant.healthStatus, options: PlantHealthStatus.allCases, displayText: { $0.displayText })
+                    LabeledEnumPicker(label: "Watering frequency", selection: $plant.wateringFrequency, options: PlantWateringFrequency.allCases, displayText: { $0.displayText })
+                    LabeledEnumPicker(label: "Care intensity", selection: $plant.careIntensity, options: PlantCareIntensity.allCases, displayText: { $0.displayText })
+                    LabeledEnumPicker(label: "Health status", selection: $plant.healthStatus, options: PlantHealthStatus.allCases, displayText: { $0.displayText })
                 }
             }
             
