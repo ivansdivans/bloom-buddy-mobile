@@ -11,7 +11,7 @@ struct WeekCalendarView: View {
     @ObservedObject var viewModel: CareScheduleViewModel
     let screenSize: CGSize
 
-    // TODO: days in the care schedule are colored from red to green, based on to-do completion progress
+    // TODO: #1 days in the care schedule are colored from red to green, based on to-do completion progress
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
