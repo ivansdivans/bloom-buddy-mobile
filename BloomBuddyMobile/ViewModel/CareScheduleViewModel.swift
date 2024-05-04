@@ -9,21 +9,21 @@ import Foundation
 import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
-    @Published var todos: [TodoListItem] = [
-        TodoListItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
-        TodoListItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
-        TodoListItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
-        TodoListItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
-        TodoListItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
+    @Published var todos: [TodoItem] = [
+        TodoItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
+        TodoItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
+        TodoItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
+        TodoItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
+        TodoItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
     ]
     
-    func markTodoAsDone(todo: TodoListItem) {
+    func markTodoDone(_ todo: TodoItem) {
         if let index = todos.firstIndex(where: { $0.id == todo.id }) {
             todos[index].isDone = true
         }
     }
     
-    func markTodoAsUndone(todo: TodoListItem) {
+    func markTodoUndone(_ todo: TodoItem) {
         if let index = todos.firstIndex(where: { $0.id == todo.id }) {
             todos[index].isDone = false
         }

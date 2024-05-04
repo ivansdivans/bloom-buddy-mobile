@@ -30,14 +30,7 @@ struct CareScheduleView: View {
             Divider()
                 .padding(.bottom, 20)
             
-            // TODO: why done item does not go to Completed section
-            TodoListView(todos: viewModel.todos,
-                         markDone: { todo in
-                viewModel.markTodoAsDone(todo: todo)
-            },
-                         markUndone: { todo in
-                viewModel.markTodoAsUndone(todo: todo)}
-            )
+            TodoListView(viewModel: viewModel)
         }
         .padding(10)
         .overlay(

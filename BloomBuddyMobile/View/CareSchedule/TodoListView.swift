@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct TodoListView: View {
-    let todos: [TodoListItem] // Q: why @State var does not solve the issue?
-    var markDone: ((TodoListItem) -> Void)? = nil
-    var markUndone: ((TodoListItem) -> Void)? = nil
+    @ObservedObject var viewModel: CareScheduleViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleTodo)
                 .font(.headline)
-            ForEach(todos.filter { $0.isDone }) { todo in
+            ForEach(viewModel.todos.filter { !$0.isDone }) { todo in
                 Button(action: {
-                    markDone?(todo)
-                    print("todo \(todo.title) isDone: \(todo.isDone)")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        viewModel.markTodoDone(todo)
+                    }
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "square")
                             .foregroundColor(.primary)
                             .padding(.trailing, 10)
                         Text(todo.title)
-                            .foregroundStyle(Color.black)
+                            .foregroundStyle(Color.primary)
                     }
                 })
             }
@@ -37,17 +36,18 @@ struct TodoListView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleCompleted)
                 .font(.headline)
-            ForEach(todos.filter { !$0.isDone }) { todo in
+            ForEach(viewModel.todos.filter { $0.isDone }) { todo in
                 Button(action: {
-                    markUndone?(todo)
-                    print("todo \(todo.title) isDone: \(todo.isDone)")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        viewModel.markTodoUndone(todo)
+                    }
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "checkmark.square")
                             .foregroundColor(.primary)
                             .padding(.trailing, 10)
                         Text(todo.title)
-                            .foregroundStyle(Color.black)
+                            .foregroundStyle(Color.primary)
                             .strikethrough()
                     }
                 })
@@ -60,9 +60,5 @@ struct TodoListView: View {
 }
 
 #Preview {
-    TodoListView(todos: [
-        TodoListItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
-        TodoListItem(id: 2, title: "Water plant", dueDate: Date(), isDone: false),
-        TodoListItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false)
-    ])
+    TodoListView(viewModel: CareScheduleViewModel())
 }

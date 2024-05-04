@@ -28,7 +28,7 @@
 		A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */; };
 		A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */; };
 		A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */; };
-		A9DBE6BB2BC40D47001EA129 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6BA2BC40D47001EA129 /* TodoListItem.swift */; };
+		A9DBE6BB2BC40D47001EA129 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */; };
 		A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */; };
 		A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A082B8CB00900432EE1 /* ContentView.swift */; };
 		A9F39A0D2B8CB00B00432EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F39A0C2B8CB00B00432EE1 /* Assets.xcassets */; };
@@ -77,7 +77,7 @@
 		A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModel.swift; sourceTree = "<group>"; };
 		A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
 		A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
-		A9DBE6BA2BC40D47001EA129 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
+		A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		A9F39A032B8CB00900432EE1 /* BloomBuddyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloomBuddyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileApp.swift; sourceTree = "<group>"; };
 		A9F39A082B8CB00900432EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		A9DBE6B92BC40D08001EA129 /* CareSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				A9DBE6BA2BC40D47001EA129 /* TodoListItem.swift */,
+				A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */,
 			);
 			path = CareSchedule;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 				1FF597EF2BA216D5007065DE /* HouseholdViewModel.swift in Sources */,
 				A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */,
 				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
-				A9DBE6BB2BC40D47001EA129 /* TodoListItem.swift in Sources */,
+				A9DBE6BB2BC40D47001EA129 /* TodoItem.swift in Sources */,
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
 				1FAB20002BC5600400B26F3E /* Prediction.swift in Sources */,
 				1FAB1FF62BC5599E00B26F3E /* BloomBuddyML.swift in Sources */,
