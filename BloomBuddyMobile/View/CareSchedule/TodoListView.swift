@@ -10,6 +10,7 @@ import SwiftUI
 struct TodoListView: View {
     @ObservedObject var viewModel: CareScheduleViewModel
     
+    // TODO: when pressing on date update TodoListView to show todos.filter dueDate = selectedDate
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleTodo)

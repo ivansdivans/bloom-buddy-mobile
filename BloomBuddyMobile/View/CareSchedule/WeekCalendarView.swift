@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct WeekCalendarView: View {
-    @ObservedObject private var viewModel = CareScheduleViewModel()
+    @ObservedObject var viewModel: CareScheduleViewModel
     let screenSize: CGSize
-//    @State var isSelected: Bool = false // TODO: implement
 
+    // TODO: days in the care schedule are colored from red to green, based on to-do completion progress
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(viewModel.getDaysOfCurrentWeek(), id: \.self) { day in
                     Button(action: {
-//                        isSelected.toggle()
-                        print("toggle isSelected bool for specific element, use id")
+                        viewModel.selectedDate = day
                     }) {
                         VStack {
                             Text(viewModel.getDayOfTheWeek(for: day))
@@ -32,8 +31,8 @@ struct WeekCalendarView: View {
                     }
                     .frame(width: screenSize.width / 8, height: 80)
                     .foregroundStyle(Color(viewModel.isToday(for: day) ? Color.red : Color.primary))
-//                    .background(isSelected ? Color.blue : nil)
-//                    .cornerRadius(10)
+                    .background(Calendar.current.isDate(day, inSameDayAs: viewModel.selectedDate) ? Color.blue : Color.clear)
+                    .cornerRadius(10)
                 }
             }
         }
@@ -41,5 +40,5 @@ struct WeekCalendarView: View {
 }
 
 #Preview {
-    WeekCalendarView(screenSize: .zero)
+    WeekCalendarView(viewModel: CareScheduleViewModel(), screenSize: .zero)
 }

@@ -9,26 +9,7 @@ import Foundation
 import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
-    @Published var todos: [TodoItem] = [
-        TodoItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
-        TodoItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
-        TodoItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
-        TodoItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
-        TodoItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
-    ]
-    
-    func markTodoDone(_ todo: TodoItem) {
-        if let index = todos.firstIndex(where: { $0.id == todo.id }) {
-            todos[index].isDone = true
-        }
-    }
-    
-    func markTodoUndone(_ todo: TodoItem) {
-        if let index = todos.firstIndex(where: { $0.id == todo.id }) {
-            todos[index].isDone = false
-        }
-    }
-    
+    // MARK: Care schedule header
     let currentDate: Date = Date()
     
     func getCurrentMonthAndYear() -> String {
@@ -37,7 +18,9 @@ class CareScheduleViewModel: ObservableObject {
         return dateFormatter.string(from: currentDate)
     }
     
-    // TODO: move to new file WeekCalendarViewModel
+    // MARK: Horizontal calendar
+    @Published var selectedDate: Date = Date()
+    
     func getDaysOfCurrentWeek() -> [Date] {
         let calendar: Calendar = Calendar.current
         let startOfWeek = calendar.date(
@@ -67,6 +50,27 @@ class CareScheduleViewModel: ObservableObject {
     
     func isToday(for date: Date) -> Bool {
         return Calendar.current.isDateInToday(date)
+    }
+    
+    // MARK: Todos
+    @Published var todos: [TodoItem] = [
+        TodoItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
+        TodoItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
+        TodoItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
+        TodoItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
+        TodoItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
+    ]
+    
+    func markTodoDone(_ todo: TodoItem) {
+        if let index = todos.firstIndex(where: { $0.id == todo.id }) {
+            todos[index].isDone = true
+        }
+    }
+    
+    func markTodoUndone(_ todo: TodoItem) {
+        if let index = todos.firstIndex(where: { $0.id == todo.id }) {
+            todos[index].isDone = false
+        }
     }
 }
 

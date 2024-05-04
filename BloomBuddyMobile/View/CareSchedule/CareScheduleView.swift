@@ -24,7 +24,7 @@ struct CareScheduleView: View {
             .padding(.bottom, 10)
             
             // TODO: make scrollable to previous/next week
-            WeekCalendarView(screenSize: screenSize)
+            WeekCalendarView(viewModel: viewModel, screenSize: screenSize)
             .padding(.bottom, 10)
             
             Divider()
