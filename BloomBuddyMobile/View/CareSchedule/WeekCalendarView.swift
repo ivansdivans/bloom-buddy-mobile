@@ -10,7 +10,7 @@ import SwiftUI
 struct WeekCalendarView: View {
     @ObservedObject private var viewModel = CareScheduleViewModel()
     let screenSize: CGSize
-//    @State var isSelected: Bool = false
+//    @State var isSelected: Bool = false // TODO: implement
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {

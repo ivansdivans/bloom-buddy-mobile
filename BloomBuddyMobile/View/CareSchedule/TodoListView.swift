@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct TodoListView: View {
-    let todos: [TodoListItem]
+    let todos: [TodoListItem] // Q: why @State var does not solve the issue?
+    var markDone: ((TodoListItem) -> Void)? = nil
+    var markUndone: ((TodoListItem) -> Void)? = nil
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -16,7 +18,8 @@ struct TodoListView: View {
                 .font(.headline)
             ForEach(todos.filter { $0.isDone }) { todo in
                 Button(action: {
-                    print("mark todo as done") // TODO: implement
+                    markDone?(todo)
+                    print("todo \(todo.title) isDone: \(todo.isDone)")
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "square")
@@ -36,7 +39,8 @@ struct TodoListView: View {
                 .font(.headline)
             ForEach(todos.filter { !$0.isDone }) { todo in
                 Button(action: {
-                    print("mark todo as NOTdone") // TODO: implement
+                    markUndone?(todo)
+                    print("todo \(todo.title) isDone: \(todo.isDone)")
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "checkmark.square")

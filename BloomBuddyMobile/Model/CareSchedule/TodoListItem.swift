@@ -8,22 +8,22 @@
 import Foundation
 
 struct TodoListItem: Identifiable {
-    public var id: Int
+    public let id: Int
     public var title: String
     public var dueDate: Date
-    public var isDone: Bool
+    public var isDone: Bool = false
     
-    init(id: Int, title: String, dueDate: Date, isDone: Bool) {
-        self.id = id
-        self.title = title
-        self.dueDate = dueDate
-        self.isDone = isDone
-    }
-    
-    init() {
-        self.id = 123
-        self.title = ""
-        self.dueDate = Date()
-        self.isDone = false
-    }
+//    init(id: Int, title: String, dueDate: Date, isDone: Bool) {
+//        self.id = id
+//        self.title = title
+//        self.dueDate = dueDate
+//        self.isDone = isDone
+//    }
+//    
+//    init() {
+//        self.id = 123
+//        self.title = ""
+//        self.dueDate = Date()
+//        self.isDone = false
+//    }
 }
