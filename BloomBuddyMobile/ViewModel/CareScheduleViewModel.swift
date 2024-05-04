@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
-    // MARK: Care schedule header
+    // MARK: CareScheduleView
     let currentDate: Date = Date()
     
     func getCurrentMonthAndYear() -> String {
@@ -18,7 +18,7 @@ class CareScheduleViewModel: ObservableObject {
         return dateFormatter.string(from: currentDate)
     }
     
-    // MARK: Horizontal calendar
+    // MARK: WeekCalendarView
     @Published var selectedDate: Date = Date()
     
     func getDaysOfCurrentWeek() -> [Date] {
@@ -52,7 +52,7 @@ class CareScheduleViewModel: ObservableObject {
         return Calendar.current.isDateInToday(date)
     }
     
-    // MARK: Todos
+    // MARK: TodoListView
     @Published var todos: [TodoItem] = [
         // yesterday
         TodoItem(id: 1, title: "Water plant", dueDate: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date(), isDone: false),
