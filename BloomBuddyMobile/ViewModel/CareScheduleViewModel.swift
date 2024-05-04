@@ -54,11 +54,18 @@ class CareScheduleViewModel: ObservableObject {
     
     // MARK: Todos
     @Published var todos: [TodoItem] = [
-        TodoItem(id: 1, title: "Fill water bottle", dueDate: Date(), isDone: true),
-        TodoItem(id: 3, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
-        TodoItem(id: 2, title: "Water plant", dueDate: Date(), isDone: true),
-        TodoItem(id: 4, title: "Open window", dueDate: Date(), isDone: false),
-        TodoItem(id: 5, title: "Pet your plant", dueDate: Date(), isDone: false)
+        // yesterday
+        TodoItem(id: 1, title: "Water plant", dueDate: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date(), isDone: false),
+        TodoItem(id: 2, title: "Open window", dueDate: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date(), isDone: false),
+        // today
+        TodoItem(id: 3, title: "Fill water bottle", dueDate: Date(), isDone: true),
+        TodoItem(id: 4, title: "Rotate towards the sun", dueDate: Date(), isDone: false),
+        TodoItem(id: 5, title: "Water plant", dueDate: Date(), isDone: true),
+        TodoItem(id: 6, title: "Open window", dueDate: Date(), isDone: false),
+        TodoItem(id: 7, title: "Pet your plant", dueDate: Date(), isDone: false),
+        // tomorrow
+        TodoItem(id: 8, title: "Water plant", dueDate: Calendar.current.date(byAdding: .day, value: +1, to: Date()) ?? Date(), isDone: false),
+        TodoItem(id: 9, title: "Open window", dueDate: Calendar.current.date(byAdding: .day, value: +1, to: Date()) ?? Date(), isDone: false)
     ]
     
     func markTodoDone(_ todo: TodoItem) {

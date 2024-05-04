@@ -10,12 +10,13 @@ import SwiftUI
 struct TodoListView: View {
     @ObservedObject var viewModel: CareScheduleViewModel
     
-    // TODO: when pressing on date update TodoListView to show todos.filter dueDate = selectedDate
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleTodo)
                 .font(.headline)
-            ForEach(viewModel.todos.filter { !$0.isDone }) { todo in
+            ForEach(viewModel.todos.filter {
+                !$0.isDone && Calendar.current.isDate($0.dueDate, inSameDayAs: viewModel.selectedDate)
+            }) { todo in
                 Button(action: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         viewModel.markTodoDone(todo)
@@ -37,7 +38,9 @@ struct TodoListView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleCompleted)
                 .font(.headline)
-            ForEach(viewModel.todos.filter { $0.isDone }) { todo in
+            ForEach(viewModel.todos.filter {
+                $0.isDone && Calendar.current.isDate($0.dueDate, inSameDayAs: viewModel.selectedDate)
+            }) { todo in
                 Button(action: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         viewModel.markTodoUndone(todo)
