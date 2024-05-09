@@ -79,6 +79,16 @@ class CareScheduleViewModel: ObservableObject {
             todos[index].isDone = false
         }
     }
+    
+    var completionPercentageForCurrentWeek: [Double] {
+        get {
+            return getDaysOfCurrentWeek().map { day in
+                let todosForDay = todos.filter { Calendar.current.isDate($0.dueDate, inSameDayAs: day) }
+                let completedTodosCount = todosForDay.filter { $0.isDone }.count
+                return Double(completedTodosCount) / Double(todosForDay.count)
+            }
+        }
+    }
 }
 
 struct SizePreferenceKey: PreferenceKey {
@@ -87,4 +97,3 @@ struct SizePreferenceKey: PreferenceKey {
         value = nextValue()
     }
 }
-

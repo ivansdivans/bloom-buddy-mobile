@@ -11,11 +11,10 @@ struct WeekCalendarView: View {
     @ObservedObject var viewModel: CareScheduleViewModel
     let screenSize: CGSize
 
-    // TODO: #1 days in the care schedule are colored from red to green, based on to-do completion progress
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(viewModel.getDaysOfCurrentWeek(), id: \.self) { day in
+                ForEach(Array(zip(viewModel.getDaysOfCurrentWeek(), viewModel.completionPercentageForCurrentWeek)), id: \.0) { day, completionPercentage in
                     Button(action: {
                         viewModel.selectedDate = day
                     }) {
@@ -30,11 +29,21 @@ struct WeekCalendarView: View {
                         }
                     }
                     .frame(width: screenSize.width / 8, height: 80)
-                    .foregroundStyle(Color(viewModel.isToday(for: day) ? Color.red : Color.primary))
+                    .foregroundColor(customColorBasedOnCompletion(completionPercentage))
                     .background(Calendar.current.isDate(day, inSameDayAs: viewModel.selectedDate) ? Color.blue : Color.clear)
                     .cornerRadius(10)
                 }
             }
+        }
+    }
+    
+    func customColorBasedOnCompletion(_ percentage: Double) -> Color {
+        if percentage == 1.0 {
+            return .green
+        } else if percentage >= 0.5 {
+            return .yellow
+        } else {
+            return .primary
         }
     }
 }
