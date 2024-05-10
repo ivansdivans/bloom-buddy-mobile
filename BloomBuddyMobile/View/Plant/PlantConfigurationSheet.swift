@@ -14,7 +14,7 @@ struct PlantConfigurationSheet: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(spacing: 0) {
                 Button("Cancel") {
                     isPresented.toggle()
                 }
@@ -28,7 +28,7 @@ struct PlantConfigurationSheet: View {
                 }
                 .fontWeight(.bold)
             }
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+            .padding(.bottom, 20)
             
             ScrollView {
                 VStack {
