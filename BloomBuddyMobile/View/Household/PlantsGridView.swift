@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlantsGridView: View {
-    var plants: [String] = []
+    var plants: [Plant] = []
     @Binding var isRemoving: Bool
     var removePlant: (String) -> Void
     
@@ -27,7 +27,7 @@ struct PlantsGridView: View {
                                     HStack {
                                         Spacer()
                                         Button(action: {
-                                            removePlant(plant)
+                                            removePlant(plant.nickName)
                                             isRemoving = false
                                         }, label: {
                                             Image(systemName: "trash")
@@ -39,7 +39,7 @@ struct PlantsGridView: View {
                                 } else {
                                     HStack {}.frame(height: 50)
                                 }
-                                Text(plant)
+                                Text(plant.nickName)
                                     .foregroundColor(.white)
                                     .font(.title)
                                     .multilineTextAlignment(.center)

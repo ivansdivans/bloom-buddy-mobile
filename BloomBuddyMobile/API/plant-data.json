@@ -1,0 +1,600 @@
+[
+    {
+        "name": {
+            "internal": "aloevera",
+            "common": "Aloe Vera",
+            "scientific": "Aloe vera"
+        },
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0676/2099/5378/files/collection_bg.png",
+        "wateringFrequency": 2,
+        "description": "Aloe vera is a succulent plant known for its medicinal properties. It has thick, fleshy leaves that contain a gel-like substance used for treating burns, wounds, and skin irritations. Aloe vera prefers well-drained soil and indirect sunlight.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for aloe vera, plant it in a pot with well-drained soil and place it in a sunny location. Water the plant sparingly, allowing the soil to dry out between watering. Avoid overwatering to prevent root rot."
+    },
+    {
+        "name": {
+            "internal": "astilbe",
+            "common": "Astilbe",
+            "scientific": "Astilbe"
+        },
+        "imageUrl": "https://www.tuinflora.com/media/catalog/product/cache/3a7af0a8e0e317723249dc9098669163/f/d/fd19401wh.jpg",
+        "wateringFrequency": 4,
+        "description": "Astilbe is a perennial flowering plant known for its feathery plumes of flowers. It blooms in summer and comes in various shades of white, pink, red, and purple. Astilbe prefers moist, well-drained soil and partial shade.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 0,
+        "careTakingInstructions": "To care for astilbe, plant it in rich, moist soil in a shady area of the garden. Keep the soil consistently moist, especially during hot, dry periods. Mulch around the base of the plant to retain moisture."
+    },
+    {
+        "name": {
+            "internal": "banana",
+            "common": "Banana",
+            "scientific": "Musa"
+        },
+        "imageUrl": "https://leafy-life.com/nl/wp-content/uploads/sites/8/2020/12/4MUDCRS00.png",
+        "wateringFrequency": 1,
+        "description": "Banana is a tropical fruit tree known for its elongated, yellow fruits. It belongs to the genus Musa and is native to Southeast Asia. Bananas thrive in warm, humid climates and require regular watering and fertilization.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 4,
+        "careTakingInstructions": "To grow bananas, plant them in well-drained, fertile soil in a sunny location. Provide regular watering and fertilize the plants monthly during the growing season. Protect the plants from strong winds and provide support for heavy fruit clusters."
+    },
+    {
+        "name": {
+            "internal": "bellflower",
+            "common": "Bellflower",
+            "scientific": "Campanula"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Campanula_persicifolia_Tehumardi_Saaremaa.jpg/440px-Campanula_persicifolia_Tehumardi_Saaremaa.jpg",
+        "wateringFrequency": 3,
+        "description": "Bellflower is a genus of flowering plants known for its bell-shaped flowers. It comes in various species and cultivars, including Campanula portenschlagiana and Campanula persicifolia. Bellflowers prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for bellflowers, plant them in well-drained soil and provide regular watering. Deadhead spent flowers to encourage continuous blooming. Divide clumps every few years to maintain plant health."
+    },
+    {
+        "name": {
+            "internal": "bilimbi",
+            "common": "Bilimbi",
+            "scientific": "Averrhoa bilimbi"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Averrhoa_bilimbi_dsc03692.jpg/440px-Averrhoa_bilimbi_dsc03692.jpg",
+        "wateringFrequency": 2,
+        "description": "Bilimbi is a tropical fruit tree known for its sour, cucumber-like fruits. It is native to Indonesia and Malaysia and belongs to the genus Averrhoa. Bilimbi trees thrive in warm, humid climates and require regular watering and fertilization.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To grow bilimbi, plant it in well-drained soil in a sunny location. Provide regular watering and fertilize the tree monthly during the growing season. Protect the tree from strong winds and provide support for heavy fruit production."
+    },
+    {
+        "name": {
+            "internal": "black_eyed_susan",
+            "common": "Black Eyed Susan",
+            "scientific": "Rudbeckia hirta"
+        },
+        "imageUrl": "https://www.gardendesign.com/pictures/images/320x240Exact/dream-team-s-portland-garden_6/black-eyed-susan-rudbeckia-pixabay_12719.jpg",
+        "wateringFrequency": 1,
+        "description": "Black Eyed Susan is a species of flowering plant in the sunflower family. It is native to North America and is known for its bright yellow, daisy-like flowers with dark brown centers. Black Eyed Susans prefer full sun and well-drained soil.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 4,
+        "careTakingInstructions": "To care for Black Eyed Susans, plant them in full sun in well-drained soil. Provide regular watering during dry periods, but avoid overwatering to prevent root rot. Deadhead spent flowers to prolong blooming."
+    },
+    {
+        "name": {
+            "internal": "calendula",
+            "common": "Calendula",
+            "scientific": "Calendula officinalis"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pot_marigold.jpg/440px-Pot_marigold.jpg",
+        "wateringFrequency": 3,
+        "description": "Calendula is a genus of flowering plants in the daisy family. It is also known as pot marigold. Calendula flowers come in shades of yellow and orange and are often used for culinary and medicinal purposes. Calendula plants prefer full sun and well-drained soil.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for calendula, plant it in well-drained soil in a sunny location. Provide regular watering and deadhead spent flowers to encourage continuous blooming. Harvest flowers for culinary and medicinal use."
+    },
+    {
+        "name": {
+            "internal": "california_poppy",
+            "common": "California Poppy",
+            "scientific": "Eschscholzia californica"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kaldari_Eschscholzia_californica_01.jpg/440px-Kaldari_Eschscholzia_californica_01.jpg",
+        "wateringFrequency": 2,
+        "description": "California Poppy is a species of flowering plant in the Papaveraceae family. It is native to California and is known for its bright orange, cup-shaped flowers. California Poppies prefer well-drained soil and full sun exposure.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for California Poppies, plant them in sandy, well-drained soil in a sunny location. Provide regular watering during the growing season but avoid overwatering. Deadhead spent flowers to promote continuous blooming."
+    },
+    {
+        "name": {
+            "internal": "cantaloupe",
+            "common": "Cantaloupe",
+            "scientific": "Cucumis melo"
+        },
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFhyM99hWQfll-FCEyk8-vhH9D4F6wA1eYX1ZULNZDMyL9sback3pACl7itmfnry8__WM&usqp=CAU",
+        "wateringFrequency": 4,
+        "description": "Cantaloupe is a species of melon in the Cucurbitaceae family. It is known for its sweet, juicy flesh and is commonly eaten fresh or used in fruit salads and desserts. Cantaloupes require warm temperatures and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow cantaloupes, plant them in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and mulch around the base of the plants to retain moisture. Harvest when the fruit is fully ripe."
+    },
+    {
+        "name": {
+            "internal": "carnation",
+            "common": "Carnation",
+            "scientific": "Dianthus caryophyllus"
+        },
+        "imageUrl": "https://www.planetnatural.com/wp-content/uploads/2023/11/Carnation.jpg",
+        "wateringFrequency": 3,
+        "description": "Carnation is a species of flowering plant in the Caryophyllaceae family. It is native to the Mediterranean region and is known for its fragrant, ruffled flowers. Carnations come in a variety of colors, including red, pink, white, and yellow.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for carnations, plant them in well-drained soil in a sunny location. Provide regular watering and deadhead spent flowers to encourage continuous blooming. Protect plants from frost and provide support for tall varieties."
+    },
+    {
+        "name": {
+            "internal": "cassava",
+            "common": "Cassava",
+            "scientific": "Manihot esculenta"
+        },
+        "imageUrl": "https://cdn.britannica.com/85/140685-050-FED64991/Cassava-manioc-Uganda-cultivation.jpg",
+        "wateringFrequency": 3,
+        "description": "Cassava is a tropical root vegetable native to South America. It is a staple food in many tropical regions and is known for its starchy tuberous roots. Cassava plants require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow cassava, plant stem cuttings in well-drained soil in a sunny location. Provide regular watering during the growing season but reduce watering as the plant matures. Harvest roots when they reach full size."
+    },
+    {
+        "name": {
+            "internal": "coconut",
+            "common": "Coconut",
+            "scientific": "Cocos nucifera"
+        },
+        "imageUrl": "https://greenparadiselive.com/cdn/shop/products/GreenCoconut1.jpg",
+        "wateringFrequency": 4,
+        "description": "Coconut is a tropical fruit and the fruit of the coconut palm. It is known for its large, brown, hairy fruit with a hard shell containing sweet, refreshing coconut water and creamy flesh. Coconut palms require well-drained soil and regular watering.",
+        "desiredTemperature": 30.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow coconut palms, plant germinated coconut seeds in sandy, well-drained soil in a sunny location. Provide regular watering and fertilize the plants regularly with a balanced fertilizer. Protect young plants from cold temperatures."
+    },
+    {
+        "name": {
+            "internal": "common_daisy",
+            "common": "Common Daisy",
+            "scientific": "Bellis perennis"
+        },
+        "imageUrl": "https://www.gwct.org.uk/media/1178785/daisy.jpg?width=300&height=200&crop=true",
+        "wateringFrequency": 2,
+        "description": "Common Daisy is a species of flowering plant in the Asteraceae family. It is native to Europe and Asia and is known for its small, white, daisy-like flowers with yellow centers. Common Daisies prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for Common Daisies, plant them in well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during dry periods, and deadhead spent flowers to encourage continuous blooming."
+    },
+    {
+        "name": {
+            "internal": "coreopsis",
+            "common": "Coreopsis",
+            "scientific": "Coreopsis"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Coreopsis_lanceolata_Sterntaler.JPG/532px-Coreopsis_lanceolata_Sterntaler.JPG",
+        "wateringFrequency": 3,
+        "description": "Coreopsis is a genus of flowering plants in the Asteraceae family. It is native to North America and is known for its bright yellow, daisy-like flowers. Coreopsis plants prefer well-drained soil and full sun exposure.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for Coreopsis, plant them in well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and deadhead spent flowers to encourage continuous blooming."
+    },
+    {
+        "name": {
+            "internal": "corn",
+            "common": "Corn",
+            "scientific": "Zea mays"
+        },
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Dracaena_Corn_Plant_FGT_1.jpg",
+        "wateringFrequency": 4,
+        "description": "Corn is a cereal grain and the seed of a plant in the grass family. It is a staple food in many parts of the world and is known for its tall stalks with large ears containing sweet, starchy kernels. Corn plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow corn, plant seeds in fertile, well-drained soil in a sunny location. Provide regular watering and fertilize the plants with nitrogen-rich fertilizer during the growing season. Harvest ears when kernels are fully formed."
+    },
+    {
+        "name": {
+            "internal": "cucumber",
+            "common": "Cucumber",
+            "scientific": "Cucumis sativus"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/440px-ARS_cucumber.jpg",
+        "wateringFrequency": 4,
+        "description": "Cucumber is a creeping vine plant and the fruit of the cucumber plant. It is known for its elongated, cylindrical fruit with smooth, green skin and crunchy flesh. Cucumbers are commonly used in salads, sandwiches, and pickles. Cucumber plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow cucumbers, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the fruiting stage, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "curcuma",
+            "common": "Curcuma",
+            "scientific": "Curcuma"
+        },
+        "imageUrl": "https://cdn11.bigcommerce.com/s-i7i23daso6/images/stencil/1280w/products/16571/36908/Curcuma_alismatifolia_Pink_0005786__54466.1698243895.jpg",
+        "wateringFrequency": 3,
+        "description": "Curcuma is a genus of flowering plants in the ginger family. It is native to Southeast Asia and is known for its colorful, fragrant flowers and aromatic rhizomes. Curcuma plants prefer well-drained soil and partial shade.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for curcuma, plant rhizomes in rich, well-drained soil in a partially shaded location. Provide regular watering, keeping the soil evenly moist but not waterlogged. Mulch around the base of the plants to retain moisture."
+    },
+    {
+        "name": {
+            "internal": "daffodil",
+            "common": "Daffodil",
+            "scientific": "Narcissus"
+        },
+        "imageUrl": "https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/img-3733.jpeg",
+        "wateringFrequency": 2,
+        "description": "Daffodil is a genus of flowering plants in the Amaryllidaceae family. It is native to Europe and North Africa and is known for its trumpet-shaped flowers with six petals. Daffodils come in various colors, including yellow, white, and orange. Daffodils prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for daffodils, plant bulbs in well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during the growing season, and deadhead spent flowers to encourage continuous blooming."
+    },
+    {
+        "name": {
+            "internal": "dandelion",
+            "common": "Dandelion",
+            "scientific": "Taraxacum"
+        },
+        "imageUrl": "https://www.plantgoodseed.com/cdn/shop/products/commondandelion2022-4_1200x.jpg",
+        "wateringFrequency": 2,
+        "description": "Dandelion is a genus of flowering plants in the Asteraceae family. It is native to Eurasia and North America and is known for its bright yellow flowers and toothed leaves. Dandelions are often considered as weeds but are also used in herbal medicine and cooking. Dandelions prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for dandelions, plant seeds or seedlings in well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during dry periods, and deadhead spent flowers to prevent self-seeding."
+    },
+    {
+        "name": {
+            "internal": "eggplant",
+            "common": "Eggplant",
+            "scientific": "Solanum melongena"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1920px-Solanum_melongena_24_08_2012_%281%29.JPG",
+        "wateringFrequency": 3,
+        "description": "Eggplant is a species of nightshade plant and the fruit of the eggplant plant. It is known for its large, egg-shaped fruit with smooth, glossy skin and mild flavor. Eggplants are commonly used in Mediterranean and Asian cuisines. Eggplant plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow eggplants, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the fruiting stage, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "galangal",
+            "common": "Galangal",
+            "scientific": "Alpinia galanga"
+        },
+        "imageUrl": "https://thisnzlife.co.nz/wp-content/uploads/2016/12/dreamstime_l_26573870.jpg",
+        "wateringFrequency": 3,
+        "description": "Galangal is a rhizomatous perennial plant in the ginger family. It is native to Southeast Asia and is known for its pungent, aromatic rhizomes used in cooking and traditional medicine. Galangal plants prefer well-drained soil and partial shade.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow galangal, plant rhizomes in rich, well-drained soil in a partially shaded location. Provide regular watering, keeping the soil evenly moist but not waterlogged. Harvest rhizomes when they are mature."
+    },
+    {
+        "name": {
+            "internal": "ginger",
+            "common": "Ginger",
+            "scientific": "Zingiber officinale"
+        },
+        "imageUrl": "https://www.thespruce.com/thmb/GhlYCfovqrtu-sIYGiwr0fZ-BDQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/flowering-ginger-plants-1315760-hero-a160485cbcbd4b27857b00423f9fa0de.jpg",
+        "wateringFrequency": 3,
+        "description": "Ginger is a flowering plant and the rhizome of the ginger plant. It is native to Southeast Asia and is known for its spicy, aromatic rhizomes used in cooking and traditional medicine. Ginger plants prefer well-drained soil and partial shade.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow ginger, plant rhizomes in rich, well-drained soil in a partially shaded location. Provide regular watering, keeping the soil evenly moist but not waterlogged. Harvest rhizomes when they are mature."
+    },
+    {
+        "name": {
+            "internal": "guava",
+            "common": "Guava",
+            "scientific": "Psidium guajava"
+        },
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0555/8363/7660/files/Urban-plants-thai-guava-pruning_1600x.jpg",
+        "wateringFrequency": 4,
+        "description": "Guava is a tropical fruit tree and the fruit of the guava plant. It is native to Mexico and Central America and is known for its sweet, aromatic fruit with pink, yellow, or white flesh and edible seeds. Guava trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow guava trees, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "iris",
+            "common": "Iris",
+            "scientific": "Iris"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Iris_germanica_%28Purple_bearded_Iris%29%2C_Wakehurst_Place%2C_UK_-_Diliff.jpg/440px-Iris_germanica_%28Purple_bearded_Iris%29%2C_Wakehurst_Place%2C_UK_-_Diliff.jpg",
+        "wateringFrequency": 2,
+        "description": "Iris is a genus of flowering plants in the Iridaceae family. It is native to Europe, North America, and Asia and is known for its showy, colorful flowers with six petals. Irises come in a variety of colors, including purple, blue, white, and yellow. Irises prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 3,
+        "careTakingInstructions": "To care for irises, plant rhizomes in well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during the growing season, and deadhead spent flowers to encourage continuous blooming."
+    },
+    {
+        "name": {
+            "internal": "kale",
+            "common": "Kale",
+            "scientific": "Brassica oleracea var. acephala"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Boerenkool.jpg",
+        "wateringFrequency": 3,
+        "description": "Kale is a leafy green vegetable and a variety of cabbage. It is known for its curly or flat leaves and is often used in salads, soups, and smoothies. Kale is rich in vitamins and minerals and is considered a superfood. Kale plants require well-drained soil and regular watering.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow kale, plant seeds or seedlings in fertile, well-drained soil in a sunny or partially shaded location. Provide regular watering and protect plants from pests and diseases. Harvest leaves when they are young and tender."
+    },
+    {
+        "name": {
+            "internal": "longbeans",
+            "common": "Long Beans",
+            "scientific": "Vigna unguiculata subsp. sesquipedalis"
+        },
+        "imageUrl": "https://www.thehomeharvesters.com/wp-content/uploads/2020/10/Growing-long-bean.jpg",
+        "wateringFrequency": 4,
+        "description": "Long Beans, also known as yardlong beans or snake beans, are a variety of legume. They are known for their long, slender pods that can grow up to 1 yard in length. Long Beans are commonly used in Asian cuisines and require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow Long Beans, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering and support for the vines as they grow. Harvest pods when they are young and tender."
+    },
+    {
+        "name": {
+            "internal": "magnolia",
+            "common": "Magnolia",
+            "scientific": "Magnolia"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Magnolia_sieboldii_flower_1.jpg/440px-Magnolia_sieboldii_flower_1.jpg",
+        "wateringFrequency": 3,
+        "description": "Magnolia is a genus of flowering plants in the Magnoliaceae family. It is native to Asia and the Americas and is known for its large, fragrant flowers and glossy leaves. Magnolias come in various species and cultivars and prefer well-drained soil and full sun to partial shade.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for magnolias, plant them in well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during dry periods, and fertilize the plants with a balanced fertilizer in spring."
+    },
+    {
+        "name": {
+            "internal": "mango",
+            "common": "Mango",
+            "scientific": "Mangifera indica"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg/440px-Mangoes_%28Magnifera_indica%29_from_India.jpg",
+        "wateringFrequency": 4,
+        "description": "Mango is a tropical fruit tree and the fruit of the mango tree. It is native to South Asia and is known for its sweet, juicy fruit with a smooth, yellow or orange skin and large seed. Mango trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow mango trees, plant seeds or grafted seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "melon",
+            "common": "Melon",
+            "scientific": "Cucumis melo"
+        },
+        "imageUrl": "https://www.nature-and-garden.com/wp-content/uploads/sites/4/2018/10/growing-melon.jpg",
+        "wateringFrequency": 4,
+        "description": "Melon is a fruit-bearing plant and the fruit of various cultivars of the melon plant. It is native to Africa and Asia and is known for its sweet, juicy fruit with a smooth or netted skin and aromatic flesh. Melons require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow melons, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the fruiting stage, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "orange",
+            "common": "Orange",
+            "scientific": "Citrus × sinensis"
+        },
+        "imageUrl": "https://nurserylive.com/cdn/shop/products/nurserylive-plants-ornamental-orange-fruit-green-leaves-plant-16969150759052_600x600.jpg",
+        "wateringFrequency": 4,
+        "description": "Orange is a citrus fruit tree and the fruit of the orange tree. It is native to Southeast Asia and is known for its round, orange fruit with a thick, textured skin and juicy, segmented flesh. Orange trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow orange trees, plant seeds or grafted seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "paddy",
+            "common": "Paddy",
+            "scientific": "Oryza sativa"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg/600px-20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg",
+        "wateringFrequency": 4,
+        "description": "Paddy, also known as rice, is a cereal grain and the seed of the rice plant. It is the most widely consumed staple food for a large part of the world's human population, especially in Asia. Paddy plants require flooded or irrigated fields and warm temperatures for growth.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow paddy, plant seeds in flooded or irrigated fields with well-drained, loamy soil. Provide regular watering and maintain flooded conditions during the growing season. Harvest rice when grains are mature."
+    },
+    {
+        "name": {
+            "internal": "papaya",
+            "common": "Papaya",
+            "scientific": "Carica papaya"
+        },
+        "imageUrl": "https://craftstocrumbs.com/wp-content/uploads/2022/05/Papaya-Tree-scaled.jpg",
+        "wateringFrequency": 4,
+        "description": "Papaya is a tropical fruit tree and the fruit of the papaya plant. It is native to Central America and is known for its sweet, orange or yellow fruit with black seeds and soft, juicy flesh. Papaya trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow papaya trees, plant seeds or grafted seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "peperchili",
+            "common": "Pepper Chili",
+            "scientific": "Capsicum annuum"
+        },
+        "imageUrl": "https://media.karousell.com/media/photos/products/2023/10/3/capsicum_frutescens_tabasco_pe_1696346976_8eb2062c.jpg",
+        "wateringFrequency": 3,
+        "description": "Pepper Chili, also known as chili pepper, is a fruit-bearing plant and the fruit of various cultivars of the pepper plant. It is native to the Americas and is known for its spicy, aromatic fruit used in cooking. Pepper Chili plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow Pepper Chili, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the fruiting stage, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "pineapple",
+            "common": "Pineapple",
+            "scientific": "Ananas comosus"
+        },
+        "imageUrl": "https://i.etsystatic.com/20406392/r/il/ba4938/2502333965/il_1588xN.2502333965_9y3p.jpg",
+        "wateringFrequency": 4,
+        "description": "Pineapple is a tropical fruit-bearing plant and the fruit of the pineapple plant. It is native to South America and is known for its sweet, juicy fruit with a spiky, textured skin and fibrous, yellow flesh. Pineapple plants require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow pineapple, plant crowns or suckers in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the plants with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "pomelo",
+            "common": "Pomelo",
+            "scientific": "Citrus maxima"
+        },
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/yFwdhBCMjEcYN8LU99wCyB.jpg",
+        "wateringFrequency": 4,
+        "description": "Pomelo is a citrus fruit tree and the largest citrus fruit. It is native to Southeast Asia and is known for its thick, yellow or green skin and sweet, juicy flesh with a slightly bitter taste. Pomelo trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow pomelo trees, plant seeds or grafted seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "rose",
+            "common": "Rose",
+            "scientific": "Rose rubiginosa"
+        },
+        "imageUrl": "https://harkness-roses.s3.amazonaws.com/700/530609.jpg",
+        "wateringFrequency": 1,
+        "description": "A rose is a flowering plant known for its fragrant blooms and thorny stems. It comes in various colors and forms and requires plenty of sunlight, well-drained soil, regular watering, and occasional pruning for healthy growth.",
+        "desiredTemperature": 21.5,
+        "careIntensity": 1,
+        "careTakingInstructions": "To take care of a potted rose, place it in a sunny spot, water it regularly, keeping the soil moist but not soggy, and fertilize it every few weeks during the growing season. Prune dead or damaged branches and remove faded flowers to encourage new growth."
+    },
+    {
+        "name": {
+            "internal": "shallot",
+            "common": "Shallot",
+            "scientific": "Allium cepa var. aggregatum"
+        },
+        "imageUrl": "https://www.attainable-sustainable.net/wp-content/uploads/2022/06/shallots-6.jpg",
+        "wateringFrequency": 3,
+        "description": "Shallot is a bulbous plant and a variety of onion. It is known for its small, elongated bulbs with a mild, sweet flavor. Shallots are commonly used in cooking and are prized for their delicate taste. Shallot plants require well-drained soil and regular watering.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow shallots, plant bulbs in well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "soybeans",
+            "common": "Soybeans",
+            "scientific": "Glycine max"
+        },
+        "imageUrl": "https://cdn.britannica.com/28/154828-050-05C6239A/Soybeans.jpg",
+        "wateringFrequency": 3,
+        "description": "Soybeans are a legume and the seed of the soybean plant. They are known for their high protein content and are used in various food products, including tofu, soy milk, and soy sauce. Soybean plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow soybeans, plant seeds in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the growing season, and fertilize the plants with a balanced fertilizer every few weeks."
+    },
+    {
+        "name": {
+            "internal": "spinach",
+            "common": "Spinach",
+            "scientific": "Spinacia oleracea"
+        },
+        "imageUrl": "https://www.rhs.org.uk/getmedia/743086ee-1ff9-448f-bf4c-69f911765cfa/spinach-Emilia3x2.jpg",
+        "wateringFrequency": 3,
+        "description": "Spinach is a leafy green vegetable and a member of the amaranth family. It is known for its dark green, crinkled leaves and is rich in vitamins and minerals. Spinach is commonly used in salads, soups, and stir-fries. Spinach plants require well-drained soil and regular watering.",
+        "desiredTemperature": 18.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow spinach, plant seeds or seedlings in fertile, well-drained soil in a sunny or partially shaded location. Provide regular watering, especially during the growing season, and protect plants from pests and diseases."
+    },
+    {
+        "name": {
+            "internal": "sunflower",
+            "common": "Sunflower",
+            "scientific": "Helianthus annuus"
+        },
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/xgkXGPm9WryeuFx9qMfQnW-1200-80.jpg",
+        "wateringFrequency": 3,
+        "description": "Sunflower is a tall flowering plant and the flower of the sunflower plant. It is native to North and Central America and is known for its large, yellow flower heads with edible seeds. Sunflowers are grown for their seeds, oil, and ornamental value. Sunflower plants require well-drained soil and regular watering.",
+        "desiredTemperature": 22.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow sunflowers, plant seeds in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the flowering stage, and support tall plants with stakes if necessary."
+    },
+    {
+        "name": {
+            "internal": "sweet_potatoes",
+            "common": "Sweet Potatoes",
+            "scientific": "Ipomoea batatas"
+        },
+        "imageUrl": "https://utgardens.tennessee.edu/wp-content/uploads/sites/220/2022/09/sweet-potato-scaled.jpg",
+        "wateringFrequency": 4,
+        "description": "Sweet Potatoes are a starchy root vegetable and the tuberous root of the sweet potato plant. They are known for their sweet, orange flesh and are used in various culinary dishes. Sweet potatoes are rich in vitamins and minerals and are grown as a staple food crop. Sweet potato plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow sweet potatoes, plant slips or vine cuttings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and harvest tubers when they are mature."
+    },
+    {
+        "name": {
+            "internal": "tobacco",
+            "common": "Tobacco",
+            "scientific": "Nicotiana tabacum"
+        },
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tabak_9290019.JPG",
+        "wateringFrequency": 3,
+        "description": "Tobacco is a flowering plant and the leaves of the tobacco plant are used for smoking, chewing, and snuffing. It is native to the Americas and is cultivated worldwide for its nicotine-rich leaves. Tobacco plants require well-drained soil and regular watering.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To grow tobacco, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and protect plants from pests and diseases."
+    },
+    {
+        "name": {
+            "internal": "tulip",
+            "common": "Tulip",
+            "scientific": "Tulipa"
+        },
+        "imageUrl": "https://tulipsinholland.com/wp-content/uploads/2024/01/The-Language-of-Tulips-meaning-behind-tulip-colors-Header.png",
+        "wateringFrequency": 3,
+        "description": "A tulip is a bulbous plant known for its brightly colored, cup-shaped flowers. It blooms in spring and comes in a variety of colors, including red, yellow, pink, and white. Tulips prefer well-drained soil and full sun exposure.",
+        "desiredTemperature": 20.0,
+        "careIntensity": 2,
+        "careTakingInstructions": "To care for tulips, plant the bulbs in the fall in well-drained soil. Provide regular watering during the growing season but avoid overwatering to prevent bulb rot. After flowering, allow the foliage to yellow and wither naturally before removing it."
+    },
+    {
+        "name": {
+            "internal": "water_lily",
+            "common": "Water Lily",
+            "scientific": "Nymphaea"
+        },
+        "imageUrl": "https://www.pondplants.co.uk/wp-content/uploads/2017/01/norma_gedye_nymphaea_water-lily_Merbrook_pondplants.jpg",
+        "wateringFrequency": 4,
+        "description": "Water Lily is an aquatic flowering plant and a member of the Nymphaeaceae family. It is native to temperate and tropical regions and is known for its floating leaves and vibrant flowers. Water lilies are grown in ponds and water gardens for their ornamental value. Water Lily plants require well-aerated water and partial to full sunlight.",
+        "desiredTemperature": 25.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow water lilies, plant rhizomes in pots filled with loamy soil and place them in ponds or water gardens with partial to full sunlight. Keep water levels consistent and remove dead leaves and flowers to promote new growth."
+    },
+    {
+        "name": {
+            "internal": "waterapple",
+            "common": "Water Apple",
+            "scientific": "Syzygium aqueum"
+        },
+        "imageUrl": "https://4.imimg.com/data4/AD/ID/ANDROID-2250749/product-500x500.jpeg",
+        "wateringFrequency": 4,
+        "description": "Water Apple is a tropical fruit-bearing tree and the fruit of the water apple tree. It is native to Southeast Asia and is known for its round, bell-shaped fruit with a thin, glossy skin and crisp, watery flesh. Water Apple trees are grown in tropical regions for their juicy, refreshing fruit. Water Apple trees require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow water apple trees, plant seeds or grafted seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during dry periods, and fertilize the trees with a balanced fertilizer every few months."
+    },
+    {
+        "name": {
+            "internal": "watermelon",
+            "common": "Watermelon",
+            "scientific": "Citrullus lanatus"
+        },
+        "imageUrl": "https://nicksgardencenter.com/wp-content/uploads/2018/12/Watermelon.jpg",
+        "wateringFrequency": 4,
+        "description": "Watermelon is a fruit-bearing vine and the fruit of the watermelon plant. It is native to Africa and is known for its large, round fruit with a thick, green rind and sweet, juicy flesh. Watermelons are grown in warm climates for their refreshing fruit, which is commonly eaten fresh or used in beverages and desserts. Watermelon plants require well-drained soil and regular watering.",
+        "desiredTemperature": 28.0,
+        "careIntensity": 1,
+        "careTakingInstructions": "To grow watermelons, plant seeds or seedlings in fertile, well-drained soil in a sunny location. Provide regular watering, especially during the fruiting stage, and fertilize the plants with a balanced fertilizer every few weeks."
+    }
+]

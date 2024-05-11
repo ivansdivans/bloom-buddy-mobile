@@ -9,7 +9,7 @@ import Foundation
 
 struct Household {
     var name: String = "My household"
-    var plants: [String] = []
+    var plants: [Plant] = []
     var configuration: HouseholdConfiguration = HouseholdConfiguration()
     var plantCount: String {
         return "\(plants.count)/5"
