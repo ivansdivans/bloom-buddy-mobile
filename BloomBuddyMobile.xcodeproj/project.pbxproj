@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2587692BF0F820001F15C7 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2587682BF0F820001F15C7 /* PlantDetailView.swift */; };
 		1F46205B2BD6884E003975F5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46205A2BD6884E003975F5 /* ImagePicker.swift */; };
 		1F61365F2BB856440048813F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61365E2BB856440048813F /* Constants.swift */; };
 		1F6AE0192BDFC610001C1361 /* plant-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6AE0182BDFC610001C1361 /* plant-data.json */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2587682BF0F820001F15C7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		1F46205A2BD6884E003975F5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1F61365E2BB856440048813F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F6AE0182BDFC610001C1361 /* plant-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "plant-data.json"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				1F6AE0262BDFDED3001C1361 /* PlantConfigurationSheet.swift */,
+				1F2587682BF0F820001F15C7 /* PlantDetailView.swift */,
 			);
 			path = Plant;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				1F61365F2BB856440048813F /* Constants.swift in Sources */,
 				1F6AE02E2BE2340A001C1361 /* LabeledTextView.swift in Sources */,
 				1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */,
+				1F2587692BF0F820001F15C7 /* PlantDetailView.swift in Sources */,
 				A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
