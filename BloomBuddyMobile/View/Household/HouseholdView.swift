@@ -11,7 +11,6 @@ struct HouseholdView: View {
     @ObservedObject private var viewModel = HouseholdViewModel()
     @State private var isRemoving = false
     @State private var isAdding = false
-    @State private var newName = ""
     
     var body: some View {
         VStack {
@@ -52,13 +51,8 @@ struct HouseholdView: View {
                 Text("Add a plant")
                     .frame(maxWidth: .infinity)
             })
-            .alert("Enter new plant name", isPresented: $isAdding) {
-                TextField("Enter new plant name", text: $newName)
-                Button("Cancel", action: { isAdding.toggle() })
-                Button("OK", action: {
-                    viewModel.addPlant(newName)
-                    newName = ""
-                })
+            .sheet(isPresented: $isAdding) {
+                ImagePicker(selectedImage: $viewModel.selectedImage)
             }
             .buttonStyle(.borderedProminent)
             .padding(.horizontal, 10)
@@ -72,6 +66,9 @@ struct HouseholdView: View {
                 changeConfiguration: viewModel.changeConfiguration,
                 currentConfiguration: viewModel.household.configuration
             )
+        }
+        .sheet(isPresented: $viewModel.isAdding) {
+            PlantConfigurationSheet(isPresented: $viewModel.isAdding, plant: $viewModel.newPlant, addPlant: viewModel.addPlant)
         }
         .alert(isPresented: $viewModel.showError) { Alert(
             title: Text("Error"),
