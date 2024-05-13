@@ -39,6 +39,11 @@
 		A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */; };
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
+		A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */; };
+		A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */; };
+		A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */; };
+		A9DBE6BB2BC40D47001EA129 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */; };
+		A9EBBBC32BF2331100615BB7 /* CareScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EBBBC22BF2331100615BB7 /* CareScheduleViewModelTests.swift */; };
 		A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */; };
 		A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A082B8CB00900432EE1 /* ContentView.swift */; };
 		A9F39A0D2B8CB00B00432EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F39A0C2B8CB00B00432EE1 /* Assets.xcassets */; };
@@ -98,6 +103,11 @@
 		A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleView.swift; sourceTree = "<group>"; };
 		A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModel.swift; sourceTree = "<group>"; };
+		A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
+		A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		A9EBBBC22BF2331100615BB7 /* CareScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModelTests.swift; sourceTree = "<group>"; };
 		A9F39A032B8CB00900432EE1 /* BloomBuddyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloomBuddyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileApp.swift; sourceTree = "<group>"; };
 		A9F39A082B8CB00900432EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +207,7 @@
 		1FF597E12BA21102007065DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A9DBE6B92BC40D08001EA129 /* CareSchedule */,
 				1F6AE02C2BE2310E001C1361 /* Plant */,
 				1FF597E62BA212A6007065DE /* Household */,
 			);
@@ -217,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF597EE2BA216D5007065DE /* HouseholdViewModel.swift */,
+				A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -244,15 +256,33 @@
 		A97907442B9E3CA10084C2D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9DBE6B22BC3288B001EA129 /* CareSchedule */,
 				1F6AE0332BE24518001C1361 /* General */,
 				1F6AE0252BDFDEC2001C1361 /* Plant */,
 				1FF597F02BA25CE8007065DE /* Household */,
-				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
 				A9F39A082B8CB00900432EE1 /* ContentView.swift */,
 				A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */,
 				1F46205A2BD6884E003975F5 /* ImagePicker.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A9DBE6B22BC3288B001EA129 /* CareSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
+				A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */,
+				A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */,
+			);
+			path = CareSchedule;
+			sourceTree = "<group>";
+		};
+		A9DBE6B92BC40D08001EA129 /* CareSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */,
+			);
+			path = CareSchedule;
 			sourceTree = "<group>";
 		};
 		A9F399FA2B8CB00900432EE1 = {
@@ -308,6 +338,7 @@
 				1FB6806B2BA81F6C003C67AF /* HouseholdViewModelTests.swift */,
 				1FAB1FF72BC55A8200B26F3E /* BloomBuddyMLTests.swift */,
 				1FAB1FFD2BC55D5600B26F3E /* Assets.xcassets */,
+				A9EBBBC22BF2331100615BB7 /* CareScheduleViewModelTests.swift */,
 			);
 			path = BloomBuddyMobileTests;
 			sourceTree = "<group>";
@@ -463,6 +494,7 @@
 				A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */,
 				1F83DA582BDA734400429A48 /* LocalJSONAPI.swift in Sources */,
 				1FF597E52BA21282007065DE /* HouseholdConfiguration.swift in Sources */,
+				A9DBE6BB2BC40D47001EA129 /* TodoItem.swift in Sources */,
 				1F6AE01C2BDFC695001C1361 /* LocalJSONAPIModels.swift in Sources */,
 				1F6AE0302BE236B6001C1361 /* LabeledTextAreaView.swift in Sources */,
 				1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */,
@@ -472,6 +504,9 @@
 				1FAB1FF62BC5599E00B26F3E /* BloomBuddyML.swift in Sources */,
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
+				A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */,
+				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
+				A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */,
 				1F6AE0202BDFCAC1001C1361 /* PlantWateringFrequency.swift in Sources */,
 				1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
@@ -479,6 +514,7 @@
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1F6AE0222BDFCB57001C1361 /* PlantCareIntensity.swift in Sources */,
 				1FF597E32BA2110F007065DE /* Household.swift in Sources */,
+				A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */,
 				1F61365F2BB856440048813F /* Constants.swift in Sources */,
 				1F6AE02E2BE2340A001C1361 /* LabeledTextView.swift in Sources */,
 				1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */,
@@ -490,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EBBBC32BF2331100615BB7 /* CareScheduleViewModelTests.swift in Sources */,
 				1FB6806E2BA82069003C67AF /* HouseholdViewModelTests.swift in Sources */,
 				A9F39A1B2B8CB00B00432EE1 /* BloomBuddyMobileTests.swift in Sources */,
 				1FAB1FF82BC55A8200B26F3E /* BloomBuddyMLTests.swift in Sources */,
