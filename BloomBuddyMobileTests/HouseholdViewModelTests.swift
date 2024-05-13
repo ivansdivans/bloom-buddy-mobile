@@ -10,12 +10,67 @@ import XCTest
 
 final class HouseholdViewModelTests: XCTestCase {
     private var sut: HouseholdViewModel!
+    private let testPlants = [
+        Plant(
+            nickName: "Sunny",
+            internalName: "Monstera Deliciosa",
+            commonName: "Swiss Cheese Plant",
+            scientificName: "Monstera deliciosa",
+            imageUrl: "https://example.com/monstera.jpg",
+            wateringFrequency: .average,
+            description: "A popular houseplant known for its distinctive foliage.",
+            desiredTemperature: 20.0,
+            careIntensity: .medium,
+            careTakingInstructions: "Keep in a bright, indirect light and water when the top inch of soil is dry.",
+            healthStatus: .good
+        ),
+        Plant(
+            nickName: "Rosie",
+            internalName: "Spathiphyllum",
+            commonName: "Peace Lily",
+            scientificName: "Spathiphyllum",
+            imageUrl: "https://example.com/peace-lily.jpg",
+            wateringFrequency: .little,
+            description: "A flowering plant known for its elegant white flowers.",
+            desiredTemperature: 18.0,
+            careIntensity: .easy,
+            careTakingInstructions: "Prefers low to medium light and regular watering.",
+            healthStatus: .veryGood
+        ),
+        Plant(
+            nickName: "Leafy",
+            internalName: "Ficus lyrata",
+            commonName: "Fiddle Leaf Fig",
+            scientificName: "Ficus lyrata",
+            imageUrl: "https://example.com/fiddle-leaf-fig.jpg",
+            wateringFrequency: .average,
+            description: "A popular indoor tree with large, violin-shaped leaves.",
+            desiredTemperature: 22.0,
+            careIntensity: .medium,
+            careTakingInstructions: "Requires bright, indirect light and regular watering.",
+            healthStatus: .good
+        )
+    ]
+    private let additionalPlant = Plant(
+        nickName: "Ruby",
+        internalName: "Echeveria",
+        commonName: "Echeveria",
+        scientificName: "Echeveria",
+        imageUrl: "https://example.com/echeveria.jpg",
+        wateringFrequency: .veryLittle,
+        description: "A succulent plant with beautiful rosette-shaped leaves.",
+        desiredTemperature: 25.0,
+        careIntensity: .easy,
+        careTakingInstructions: "Prefers bright, indirect light and sparing watering.",
+        healthStatus: .veryGood
+    )
 
+    
     override func setUpWithError() throws {
         sut = HouseholdViewModel()
         sut.household = Household(
             name: "Test household",
-            plants: ["testPlant1", "testPlant2", "testPlant3"],
+            plants: testPlants,
             configuration: HouseholdConfiguration(
                 sunlight: .aLot,
                 airQuality: 100,
@@ -23,11 +78,11 @@ final class HouseholdViewModelTests: XCTestCase {
                 averageTemperature: 20
             ))
     }
-
+    
     override func tearDownWithError() throws {
         sut = nil
     }
-
+    
     func test_changeConfiguration() {
         let newConfiguration = HouseholdConfiguration(
             sunlight: .veryLittle,
@@ -58,34 +113,61 @@ final class HouseholdViewModelTests: XCTestCase {
     }
     
     func test_addPlant() {
-        let newPlant = "New plant"
+        sut.newPlant = additionalPlant
         
-        sut.addPlant(newPlant)
+        sut.addPlant()
         
-        XCTAssertTrue(sut.household.plants.contains(newPlant))
+        XCTAssertTrue(sut.household.plants.contains(additionalPlant))
     }
     
     func test_addPlant_outOfRange() {
-        let newPlant = "New plant"
-        sut.addPlant("testPlant4")
-        sut.addPlant("testPlant5")
+        sut.newPlant = Plant(
+            nickName: "Frost",
+            internalName: "Calathea",
+            commonName: "Calathea",
+            scientificName: "Calathea",
+            imageUrl: "https://example.com/calathea.jpg",
+            wateringFrequency: .aboveAverage,
+            description: "A genus of plants known for their striking foliage patterns.",
+            desiredTemperature: 22.0,
+            careIntensity: .medium,
+            careTakingInstructions: "Keep in bright, indirect light and water regularly.",
+            healthStatus: .good
+        )
+        sut.addPlant()
+        sut.newPlant = Plant(
+            nickName: "Blossom",
+            internalName: "Hibiscus rosa-sinensis",
+            commonName: "Hibiscus",
+            scientificName: "Hibiscus rosa-sinensis",
+            imageUrl: "https://example.com/hibiscus.jpg",
+            wateringFrequency: .average,
+            description: "A tropical flowering plant with large, colorful blossoms.",
+            desiredTemperature: 25.0,
+            careIntensity: .medium,
+            careTakingInstructions: "Prefers full sun and regular watering.",
+            healthStatus: .good
+        )
+        sut.addPlant()
         
-        sut.addPlant(newPlant)
+        sut.newPlant = additionalPlant
+        sut.addPlant()
         
         XCTAssertTrue(sut.showError)
     }
     
     func test_addPlant_alreadyExists() {
-        sut.addPlant(sut.household.plants.first!)
+        sut.newPlant = sut.household.plants.first
+        sut.addPlant()
         
         XCTAssertTrue(sut.showError)
     }
     
     func test_removePlant() {
-        let plantToRemove = "testPlant1"
-        sut.removePlant(plantToRemove)
+        let nameToRemove = sut.household.plants.first?.nickName ?? ""
+        sut.removePlant(nameToRemove)
         
-        XCTAssertFalse(sut.household.plants.contains(plantToRemove))
+        XCTAssertFalse(sut.household.plants.contains(where: { $0.nickName == nameToRemove }))
     }
     
     func test_removePlant_notFound() {
