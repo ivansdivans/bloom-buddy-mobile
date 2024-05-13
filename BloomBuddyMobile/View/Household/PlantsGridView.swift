@@ -17,7 +17,7 @@ struct PlantsGridView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(plants, id: \.self) { plant in
-                        NavigationLink(destination: PlantDetailView()) {
+                        NavigationLink(destination: PlantDetailView(plant: plant)) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
                                     .fill(Color(red: 0.649, green: 0.741, blue: 0.572))

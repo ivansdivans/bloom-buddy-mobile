@@ -2,22 +2,25 @@
 //  LabeledTextView.swift
 //  BloomBuddyMobile
 //
-//  Created by Daan Brocatus on 01/05/2024.
+//  Created by Daan Brocatus on 13/05/2024.
 //
 
 import SwiftUI
 
 struct LabeledTextView: View {
-    var label: String
-    @Binding var text: String
+    let label: String
+    let text: String
     
     var body: some View {
         HStack {
-            Text(label + ":")
+            Text(label)
                 .fontWeight(.bold)
             Spacer()
-            TextField("", text: $text)
-                .textFieldStyle(.roundedBorder)
-        }
+            Text(text)
+        }.padding(.vertical, 2)
     }
+}
+
+#Preview {
+    LabeledTextView(label: "label", text: "text")
 }
