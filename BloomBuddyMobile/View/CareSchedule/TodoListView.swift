@@ -19,7 +19,7 @@ struct TodoListView: View {
             }) { todo in
                 Button(action: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        viewModel.toggleToDo(todo)
+                        viewModel.toggleTodo(todo)
                     }
                 }, label: {
                     HStack(spacing: 0) {
@@ -43,7 +43,7 @@ struct TodoListView: View {
             }) { todo in
                 Button(action: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        viewModel.toggleToDo(todo)
+                        viewModel.toggleTodo(todo)
                     }
                 }, label: {
                     HStack(spacing: 0) {

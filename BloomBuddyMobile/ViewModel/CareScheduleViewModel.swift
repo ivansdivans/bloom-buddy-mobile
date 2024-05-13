@@ -68,9 +68,9 @@ class CareScheduleViewModel: ObservableObject {
         TodoItem(id: 9, title: "Open window", dueDate: Calendar.current.date(byAdding: .day, value: +1, to: Date()) ?? Date(), isDone: false)
     ]
     
-    func toggleToDo(_ todo: TodoItem) {
+    func toggleTodo(_ todo: TodoItem) {
         if let index = todos.firstIndex(where: { $0.id == todo.id }) {
-            todos[index].isDone = !todos[index].isDone
+            todos[index].isDone.toggle()
         }
     }
     
