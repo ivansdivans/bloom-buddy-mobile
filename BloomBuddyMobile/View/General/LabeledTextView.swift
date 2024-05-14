@@ -17,7 +17,8 @@ struct LabeledTextView: View {
                 .fontWeight(.bold)
             Spacer()
             Text(text)
-        }.padding(.vertical, 2)
+        }
+        .padding(.vertical, 2)
     }
 }
 

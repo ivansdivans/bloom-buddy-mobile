@@ -40,7 +40,8 @@ struct PlantDetailView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
-            }.padding(.vertical, 2)
+            }
+            .padding(.vertical, 2)
             LabeledTextView(label: "Health status", text: plant.healthStatus.displayText)
             LabeledTextView(label: "Care intensity", text: plant.careIntensity.displayText)
             LabeledTextView(label: "Desired temperature", text: "\(String(format: "%.2f", plant.desiredTemperature)) C")
