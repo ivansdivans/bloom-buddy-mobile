@@ -32,10 +32,10 @@ struct PlantConfigurationSheet: View {
             
             ScrollView {
                 VStack {
-                    LabeledTextView(label: "Nickname", text: $plant.nickName)
-                    LabeledTextView(label: "Internal name", text: $plant.internalName)
-                    LabeledTextView(label: "Common name", text: $plant.commonName)
-                    LabeledTextView(label: "Scientific name", text: $plant.scientificName)
+                    LabeledTextFieldView(label: "Nickname", text: $plant.nickName)
+                    LabeledTextFieldView(label: "Internal name", text: $plant.internalName)
+                    LabeledTextFieldView(label: "Common name", text: $plant.commonName)
+                    LabeledTextFieldView(label: "Scientific name", text: $plant.scientificName)
                     Spacer(minLength: 15)
                     LabeledTextAreaView(label: "Image URL", text: $plant.imageUrl)
                     LabeledTextAreaView(label: "Description", text: $plant.description)

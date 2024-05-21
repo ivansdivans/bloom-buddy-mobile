@@ -12,7 +12,9 @@ import SwiftData
 struct BloomBuddyMobileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
         }
     }
 }

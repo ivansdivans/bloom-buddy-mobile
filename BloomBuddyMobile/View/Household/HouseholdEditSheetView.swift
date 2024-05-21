@@ -32,7 +32,7 @@ struct HouseholdEditSheetView: View {
                 .fontWeight(.bold)
             }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-            LabeledTextView(label: "Name", text: $newName)
+            LabeledTextFieldView(label: "Name", text: $newName)
                 .padding(.vertical)
             HouseholdEditConfigurationView(configuration: $currentConfiguration)
             Spacer()
