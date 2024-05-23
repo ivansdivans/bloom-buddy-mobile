@@ -10,6 +10,12 @@ import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
     // MARK: CareScheduleView
+    @Published var careSchedule: CareSchedule = CareSchedule(
+        id: 1,
+        plants: [],
+        todos: []
+    )
+    
     let currentDate: Date = Date()
     
     func getCurrentMonthAndYear() -> String {
