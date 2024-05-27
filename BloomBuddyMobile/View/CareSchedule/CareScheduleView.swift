@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CareScheduleView: View {
-    @ObservedObject private var viewModel = CareScheduleViewModel()
+    @ObservedObject var careScheduleViewModel: CareScheduleViewModel
+    @ObservedObject var householdViewModel: HouseholdViewModel
     @State var screenSize: CGSize = .zero
     
     var body: some View {
@@ -18,32 +19,41 @@ struct CareScheduleView: View {
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
             HStack {
-                Text(viewModel.getCurrentMonthAndYear())
+                Text(careScheduleViewModel.getCurrentMonthAndYear())
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.bottom, 10)
             
-            if viewModel.careSchedule.plants.isEmpty {
+            if careScheduleViewModel.careSchedule.plants.isEmpty {
                 ContentUnavailableView(label: {
-                    Label("You don't have \ncare schedule yet", systemImage: "exclamationmark.triangle")
-                }, actions: {
+                    Label("You don't have \ncare schedule yet", systemImage: "calendar.badge.plus")
+                },
+                                       actions: {
                     Button(action: {
-                        // open sheet
-                        // select plant
+                        careScheduleViewModel.isCreatingCareSchedule.toggle()
                     }, label: {
                         Text("Create care schedule")
                     })
                     .buttonStyle(.borderedProminent)
                     .padding(.top, 30)
+                    .sheet(isPresented: $careScheduleViewModel.isCreatingCareSchedule) {
+                        GenerateCareScheduleSheetView(
+                            householdViewModel: householdViewModel,
+                            setSelectedPlants: { selectedPlants in
+                                careScheduleViewModel.setSelectedPlants(plantsArr: selectedPlants)
+                            },
+                            generateCareSchedule: careScheduleViewModel.generateCareSchedule
+                        )
+                    }
                 })
             } else {
-                WeekCalendarView(viewModel: viewModel, screenSize: screenSize)
+                WeekCalendarView(viewModel: careScheduleViewModel, screenSize: screenSize)
                     .padding(.bottom, 10)
                 
                 Divider()
                     .padding(.bottom, 20)
                 
-                TodoListView(viewModel: viewModel)
+                TodoListView(viewModel: careScheduleViewModel)
             }
         }
         .padding(10)
@@ -59,5 +69,8 @@ struct CareScheduleView: View {
 }
 
 #Preview {
-    CareScheduleView()
+    CareScheduleView(
+        careScheduleViewModel: CareScheduleViewModel(),
+        householdViewModel: HouseholdViewModel()
+    )
 }

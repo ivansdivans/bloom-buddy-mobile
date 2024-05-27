@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct HouseholdView: View {
-    @ObservedObject private var viewModel = HouseholdViewModel()
+    @ObservedObject var viewModel: HouseholdViewModel
     @State private var isRemoving = false
     @State private var isAdding = false
     
+    // TODO: add ContentUnavailableView instead of add plant button
+    // only when no plants at all, when one plant exists keep current implementation
     var body: some View {
         VStack {
             HStack {

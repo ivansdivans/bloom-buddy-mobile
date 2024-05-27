@@ -47,6 +47,7 @@
 		A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */; };
 		A9DBE6BB2BC40D47001EA129 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */; };
 		A9E477772BFF51EA007CE870 /* CareSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E477762BFF51EA007CE870 /* CareSchedule.swift */; };
+		A9E4777B2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4777A2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift */; };
 		A9EBBBC32BF2331100615BB7 /* CareScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EBBBC22BF2331100615BB7 /* CareScheduleViewModelTests.swift */; };
 		A9F39A072B8CB00900432EE1 /* BloomBuddyMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */; };
 		A9F39A092B8CB00900432EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F39A082B8CB00900432EE1 /* ContentView.swift */; };
@@ -115,6 +116,7 @@
 		A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		A9DBE6BA2BC40D47001EA129 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		A9E477762BFF51EA007CE870 /* CareSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareSchedule.swift; sourceTree = "<group>"; };
+		A9E4777A2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCareScheduleSheetView.swift; sourceTree = "<group>"; };
 		A9EBBBC22BF2331100615BB7 /* CareScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModelTests.swift; sourceTree = "<group>"; };
 		A9F39A032B8CB00900432EE1 /* BloomBuddyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloomBuddyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F39A062B8CB00900432EE1 /* BloomBuddyMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileApp.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */,
 				A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */,
 				A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */,
+				A9E4777A2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift */,
 			);
 			path = CareSchedule;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				1F6AE0202BDFCAC1001C1361 /* PlantWateringFrequency.swift in Sources */,
 				1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
+				A9E4777B2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift in Sources */,
 				1F6AE0272BDFDED3001C1361 /* PlantConfigurationSheet.swift in Sources */,
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
 				1F6AE0222BDFCB57001C1361 /* PlantCareIntensity.swift in Sources */,

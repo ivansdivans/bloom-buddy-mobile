@@ -13,7 +13,7 @@ struct PlantsGridView: View {
     var removePlant: (String) -> Void
     
     var body: some View {
-        ScrollView {
+        ScrollView { // TODO: Ask Daan why do we need scrollview inside scrollview?
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(plants, id: \.self) { plant in

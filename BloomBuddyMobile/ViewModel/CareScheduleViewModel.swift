@@ -15,6 +15,15 @@ class CareScheduleViewModel: ObservableObject {
         plants: [],
         todos: []
     )
+    @Published var isCreatingCareSchedule = false
+    
+    func setSelectedPlants(plantsArr: [Plant]) -> Void {
+        careSchedule.plants = plantsArr
+    }
+    
+    func generateCareSchedule() -> Void {
+        print("generateCareSchedule called") // TODO: focus on this
+    }
     
     let currentDate: Date = Date()
     
