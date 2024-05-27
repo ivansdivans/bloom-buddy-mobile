@@ -21,8 +21,9 @@ class CareScheduleViewModel: ObservableObject {
         careSchedule.plants = plantsArr
     }
     
+    // TODO: #1 implement this
     func generateCareSchedule() -> Void {
-        print("generateCareSchedule called") // TODO: focus on this
+        print("generateCareSchedule called")
     }
     
     let currentDate: Date = Date()

@@ -14,7 +14,7 @@ struct GenerateCareScheduleSheetView: View {
     var generateCareSchedule: () -> Void
     @Environment(\.dismiss) private var dismiss
     
-    // TODO: improve code
+    // TODO: #3 improve code
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {

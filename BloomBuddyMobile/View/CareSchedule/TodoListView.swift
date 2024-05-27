@@ -10,6 +10,7 @@ import SwiftUI
 struct TodoListView: View {
     @ObservedObject var viewModel: CareScheduleViewModel
     
+    // TODO: #2 implement Screen with CareSchedule data
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(Constants.Texts.careScheduleTodo)
