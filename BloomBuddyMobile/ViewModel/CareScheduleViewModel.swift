@@ -10,6 +10,14 @@ import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
     // MARK: CareScheduleView
+    let currentDate: Date = Date()
+    
+    func getCurrentMonthAndYear() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM, yyyy"
+        return dateFormatter.string(from: currentDate)
+    }
+    
     @Published var careSchedule: CareSchedule = CareSchedule(
         id: 1,
         plants: [],
@@ -56,15 +64,13 @@ class CareScheduleViewModel: ObservableObject {
         let daysToAdd = (day - currentWeekday + 7) % 7
         return calendar.date(byAdding: .day, value: daysToAdd, to: date) ?? Date()
     }
-        
-    let currentDate: Date = Date()
     
-    func getCurrentMonthAndYear() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM, yyyy"
-        return dateFormatter.string(from: currentDate)
+    func hasTodos(for date: Date) -> Bool {
+        return careSchedule.todos.contains {
+            Calendar.current.isDate($0.dueDate, inSameDayAs: date)
+        }
     }
-    
+        
     // MARK: WeekCalendarView
     @Published var selectedDate: Date = Date()
     
