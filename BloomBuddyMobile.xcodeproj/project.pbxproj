@@ -77,6 +77,7 @@
 		1F2587682BF0F820001F15C7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		1F25876A2BF0FCD7001F15C7 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		1F25876E2BF23BE2001F15C7 /* LabeledTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextView.swift; sourceTree = "<group>"; };
+		1F3E92C32C04DCD000E93015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F46205A2BD6884E003975F5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1F61365E2BB856440048813F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F6AE0182BDFC610001C1361 /* plant-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "plant-data.json"; sourceTree = "<group>"; };
@@ -317,6 +318,7 @@
 		A9F39A052B8CB00900432EE1 /* BloomBuddyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				1F3E92C32C04DCD000E93015 /* Info.plist */,
 				1F83DA452BDA4C5A00429A48 /* API */,
 				1F7BBE8B2BBEA55300B6B906 /* MLModels */,
 				1FF597F72BA2F74B007065DE /* Errors */,
@@ -698,6 +700,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloomBuddyMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBuddy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -738,6 +742,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloomBuddyMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBuddy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
