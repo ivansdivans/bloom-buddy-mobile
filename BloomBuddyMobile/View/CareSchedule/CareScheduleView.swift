@@ -49,10 +49,8 @@ struct CareScheduleView: View {
             } else {
                 WeekCalendarView(viewModel: careScheduleViewModel, screenSize: screenSize)
                     .padding(.bottom, 10)
-                
                 Divider()
                     .padding(.bottom, 20)
-                
                 TodoListView(viewModel: careScheduleViewModel)
             }
         }

@@ -62,8 +62,8 @@ final class CareScheduleViewModelTests: XCTestCase {
     
     func test_toggleToDo() {
         sut.todos = [
-            TodoItem(id: 1, title: "Test todo", dueDate: Date(), isDone: true),
-            TodoItem(id: 2, title: "Test todo", dueDate: Date(), isDone: true)
+            TodoItem(id: 1, plantNickName: "testBuddy", title: "Test todo", dueDate: Date(), isDone: true),
+            TodoItem(id: 2, plantNickName: "testBuddy", title: "Test todo", dueDate: Date(), isDone: true)
         ]
         let currentTodoState = sut.todos[0].isDone
         sut.toggleTodo(sut.todos[0])
@@ -77,12 +77,12 @@ final class CareScheduleViewModelTests: XCTestCase {
         let tuesdayOfCurrentWeek = daysOfCurrentWeek[1]
         let wednesdayOfCurrentWeek = daysOfCurrentWeek[2]
         sut.todos = [
-            TodoItem(id: 1, title: "Monday todo 1", dueDate: mondayOfCurrentWeek, isDone: true),
-            TodoItem(id: 2, title: "Monday todo 2", dueDate: mondayOfCurrentWeek, isDone: true),
-            TodoItem(id: 3, title: "Tuesday todo 1", dueDate: tuesdayOfCurrentWeek, isDone: true),
-            TodoItem(id: 4, title: "Tuesday todo 2", dueDate: tuesdayOfCurrentWeek, isDone: false),
-            TodoItem(id: 8, title: "Wednesday todo 1", dueDate: wednesdayOfCurrentWeek, isDone: false),
-            TodoItem(id: 9, title: "Wednesday todo 2", dueDate: wednesdayOfCurrentWeek, isDone: false)
+            TodoItem(id: 1, plantNickName: "testBuddy", title: "Monday todo 1", dueDate: mondayOfCurrentWeek, isDone: true),
+            TodoItem(id: 2, plantNickName: "testBuddy", title: "Monday todo 2", dueDate: mondayOfCurrentWeek, isDone: true),
+            TodoItem(id: 3, plantNickName: "testBuddy", title: "Tuesday todo 1", dueDate: tuesdayOfCurrentWeek, isDone: true),
+            TodoItem(id: 4, plantNickName: "testBuddy", title: "Tuesday todo 2", dueDate: tuesdayOfCurrentWeek, isDone: false),
+            TodoItem(id: 8, plantNickName: "testBuddy", title: "Wednesday todo 1", dueDate: wednesdayOfCurrentWeek, isDone: false),
+            TodoItem(id: 9, plantNickName: "testBuddy", title: "Wednesday todo 2", dueDate: wednesdayOfCurrentWeek, isDone: false)
         ]
         let completionPercentages = sut.completionPercentageForCurrentWeek
         XCTAssertEqual(completionPercentages[0], 1.0)
