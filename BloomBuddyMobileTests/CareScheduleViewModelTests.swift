@@ -14,11 +14,11 @@ final class CareScheduleViewModelTests: XCTestCase {
     override func setUpWithError() throws {
         sut = CareScheduleViewModel()
     }
-
+    
     override func tearDownWithError() throws {
         sut = nil
     }
-
+    
     func test_getCurrentMonthAndYear() {
         let result = sut.getCurrentMonthAndYear()
         let dateFormatter = DateFormatter()
@@ -35,7 +35,7 @@ final class CareScheduleViewModelTests: XCTestCase {
         sut.selectedDate = tomorrow
         XCTAssertEqual(sut.selectedDate, tomorrow)
     }
-
+    
     func test_getDaysOfCurrentWeek() {
         let days = sut.getDaysOfCurrentWeek()
         XCTAssertEqual(days.count, 7)
@@ -61,13 +61,13 @@ final class CareScheduleViewModelTests: XCTestCase {
     }
     
     func test_toggleToDo() {
-        sut.todos = [
+        sut.careSchedule.todos = [
             TodoItem(id: 1, plantNickName: "testBuddy", title: "Test todo", dueDate: Date(), isDone: true),
             TodoItem(id: 2, plantNickName: "testBuddy", title: "Test todo", dueDate: Date(), isDone: true)
         ]
-        let currentTodoState = sut.todos[0].isDone
-        sut.toggleTodo(sut.todos[0])
-        let newTodoState = sut.todos[0].isDone
+        let currentTodoState = sut.careSchedule.todos[0].isDone
+        sut.toggleTodo(sut.careSchedule.todos[0])
+        let newTodoState = sut.careSchedule.todos[0].isDone
         XCTAssertNotEqual(currentTodoState, newTodoState)
     }
     
@@ -76,7 +76,7 @@ final class CareScheduleViewModelTests: XCTestCase {
         let mondayOfCurrentWeek = daysOfCurrentWeek[0]
         let tuesdayOfCurrentWeek = daysOfCurrentWeek[1]
         let wednesdayOfCurrentWeek = daysOfCurrentWeek[2]
-        sut.todos = [
+        sut.careSchedule.todos = [
             TodoItem(id: 1, plantNickName: "testBuddy", title: "Monday todo 1", dueDate: mondayOfCurrentWeek, isDone: true),
             TodoItem(id: 2, plantNickName: "testBuddy", title: "Monday todo 2", dueDate: mondayOfCurrentWeek, isDone: true),
             TodoItem(id: 3, plantNickName: "testBuddy", title: "Tuesday todo 1", dueDate: tuesdayOfCurrentWeek, isDone: true),
@@ -88,5 +88,76 @@ final class CareScheduleViewModelTests: XCTestCase {
         XCTAssertEqual(completionPercentages[0], 1.0)
         XCTAssertEqual(completionPercentages[1], 0.5)
         XCTAssertEqual(completionPercentages[2], 0.0)
+    }
+    
+    func test_setSelectedPlants() {
+        let plants = [
+            Plant(
+                nickName: "Frost",
+                internalName: "Calathea",
+                commonName: "Calathea",
+                scientificName: "Calathea",
+                imageUrl: "https://example.com/calathea.jpg",
+                wateringFrequency: .aboveAverage,
+                description: "A genus of plants known for their striking foliage patterns.",
+                desiredTemperature: 22.0,
+                careIntensity: .medium,
+                careTakingInstructions: "Keep in bright, indirect light and water regularly.",
+                healthStatus: .good
+            )
+        ]
+        sut.setSelectedPlants(plantsArr: plants)
+        XCTAssertEqual(sut.careSchedule.plants, plants)
+    }
+    
+    func test_generateCareSchedule() {
+        let plants = [
+            Plant(
+                nickName: "Frost",
+                internalName: "Calathea",
+                commonName: "Calathea",
+                scientificName: "Calathea",
+                imageUrl: "https://example.com/calathea.jpg",
+                wateringFrequency: .aboveAverage,
+                description: "A genus of plants known for their striking foliage patterns.",
+                desiredTemperature: 22.0,
+                careIntensity: .medium,
+                careTakingInstructions: "Keep in bright, indirect light and water regularly.",
+                healthStatus: .good
+            )
+        ]
+        sut.setSelectedPlants(plantsArr: plants)
+        sut.generateCareSchedule()
+        XCTAssertEqual(sut.careSchedule.todos.count, 4)
+        XCTAssertEqual(sut.careSchedule.todos[0].title, "Water Frost")
+    }
+    
+    func test_findUpcoming() {
+        let referenceDate = Calendar.current.date(from: DateComponents(year: 2024, month: 5, day: 28)) ?? Date()
+        let upcomingSunday = sut.findUpcoming(day: 1, from: referenceDate)
+        let expectedDate = Calendar.current.date(from: DateComponents(year: 2024, month: 6, day: 2)) ?? Date()
+        XCTAssertEqual(upcomingSunday, expectedDate)
+    }
+    
+    func test_hasTodos() {
+        let plants = [
+            Plant(
+                nickName: "Frost",
+                internalName: "Calathea",
+                commonName: "Calathea",
+                scientificName: "Calathea",
+                imageUrl: "https://example.com/calathea.jpg",
+                wateringFrequency: .aboveAverage,
+                description: "A genus of plants known for their striking foliage patterns.",
+                desiredTemperature: 22.0,
+                careIntensity: .medium,
+                careTakingInstructions: "Keep in bright, indirect light and water regularly.",
+                healthStatus: .good
+            )
+        ]
+        sut.setSelectedPlants(plantsArr: plants)
+        sut.generateCareSchedule()
+        let testDate = Calendar.current.date(byAdding: .day, value: 1, to: Date()) ?? Date()
+        XCTAssertTrue(sut.hasTodos(for: testDate))
     }
 }
