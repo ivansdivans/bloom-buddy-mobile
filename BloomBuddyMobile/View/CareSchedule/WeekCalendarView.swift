@@ -14,7 +14,7 @@ struct WeekCalendarView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(Array(zip(viewModel.getDaysOfCurrentWeek(), viewModel.completionPercentageForCurrentWeek)), id: \.0) { day, completionPercentage in
+                ForEach(Array(zip(viewModel.currentWeekDays, viewModel.completionPercentageForCurrentWeek)), id: \.0) { day, completionPercentage in
                     Button(action: {
                         viewModel.selectedDate = day
                     }) {

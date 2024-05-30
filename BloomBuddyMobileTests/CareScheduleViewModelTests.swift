@@ -132,13 +132,6 @@ final class CareScheduleViewModelTests: XCTestCase {
         XCTAssertEqual(sut.careSchedule.todos[0].title, "Water Frost")
     }
     
-    func test_findUpcoming() {
-        let referenceDate = Calendar.current.date(from: DateComponents(year: 2024, month: 5, day: 28)) ?? Date()
-        let upcomingSunday = sut.findUpcoming(day: 1, from: referenceDate)
-        let expectedDate = Calendar.current.date(from: DateComponents(year: 2024, month: 6, day: 2)) ?? Date()
-        XCTAssertEqual(upcomingSunday, expectedDate)
-    }
-    
     func test_hasTodos() {
         let plants = [
             Plant(

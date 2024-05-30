@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 class CareScheduleViewModel: ObservableObject {
+    
+    init() {
+        self.currentWeekDays = getDaysOfCurrentWeek()
+    }
+    
     // MARK: CareScheduleView
     let currentDate: Date = Date()
     
@@ -34,15 +39,17 @@ class CareScheduleViewModel: ObservableObject {
         for plant in careSchedule.plants {
             let schedule = getSchedule(for: plant.wateringFrequency)
             for (index, day) in schedule.enumerated() {
-                todos.append(
-                    TodoItem(
-                        id: todos.count + 1,
-                        plantNickName: plant.nickName,
-                        title: "Water \(plant.nickName)",
-                        dueDate: findUpcoming(day: day),
-                        isDone: false
+                if day - 1 < currentWeekDays.count {
+                    todos.append(
+                        TodoItem(
+                            id: todos.count + 1,
+                            plantNickName: plant.nickName,
+                            title: "Water \(plant.nickName)",
+                            dueDate: currentWeekDays[day - 1],
+                            isDone: false
+                        )
                     )
-                )
+                }
             }
         }
         careSchedule.todos = todos
@@ -50,19 +57,12 @@ class CareScheduleViewModel: ObservableObject {
     
     private func getSchedule(for frequency: PlantWateringFrequency) -> [Int] {
         switch frequency {
-        case .veryLittle: return [1]
-        case .little: return [1, 4]
-        case .average: return [1, 3, 5]
-        case .aboveAverage: return [1, 2, 4, 6]
+        case .veryLittle: return [7]
+        case .little: return [3, 7]
+        case .average: return [2, 4, 7]
+        case .aboveAverage: return [1, 3, 5, 7]
         case .aLot: return [1, 2, 3, 4, 5, 6, 7]
         }
-    }
-    
-    func findUpcoming(day: Int, from date: Date = Date()) -> Date {
-        let calendar = Calendar.current
-        let currentWeekday = calendar.component(.weekday, from: date)
-        let daysToAdd = (day - currentWeekday + 7) % 7
-        return calendar.date(byAdding: .day, value: daysToAdd, to: date) ?? Date()
     }
     
     func hasTodos(for date: Date) -> Bool {
@@ -73,6 +73,7 @@ class CareScheduleViewModel: ObservableObject {
         
     // MARK: WeekCalendarView
     @Published var selectedDate: Date = Date()
+    @Published var currentWeekDays: [Date] = []
     
     func getDaysOfCurrentWeek() -> [Date] {
         let calendar: Calendar = Calendar.current
