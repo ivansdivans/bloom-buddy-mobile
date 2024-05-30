@@ -1,10 +1,48 @@
-# bloom-buddy-mobile
+# BloomBuddy iOS App
+
+![alt text](https://github.com/ivansdivans/bloom-buddy-mobile/blob/main/BloomBuddyMobile/Assets.xcassets/AppIcon.appiconset/180.png)
+
+"BloomBuddy" is your personal plant assistant. It serves the only purpose - help taking care of your house plants.
+
+You can create a household with up to 5 plants. Plants are automatically classified using build-in Machine Learning (ML) model. App can create tailored care schedule using scientific data about the plants and your household configuration.
+
+Using intuitive calendar view you can easily tick off plant care todos and view plant care history.
+
+## Credits
+
+This pet project was created by [Daan Brocatus](https://github.com/Inn0) and [Ivans Mihailovs](https://github.com/ivansdivans). Their intention was to practice SwiftUI and try innovative solutions.
+
+While working on this pet project Daan and Ivans learned:
+- key SwiftUI features (including view layouts and design, view hierarchy, navigation between views, managing model data, sheets and alerts, environment variables)
+- "Create ML" developer tool
+
+Side skills that Daan and Ivans practiced while working on this pet project include:
+- product ownership
+- Scrum like setup with reoccuring meetings and kanban board
+- self-organised work on tickets
+- peer review
+
+All the above mentioned directly benefited client's project where SwiftUI was being introduced for the first time.
+
+## Project status
+
+Currently project is in MVP stage which includes following features:
+- Creating and configuring your household (including name, sunlight level, air quality, humidity and average temperature)
+- Adding up to 5 plants from your phone's gallery
+- Automatically clasifying plant using trained ML model
+- Editing plant's details
+- Generating plants care schedule based on watering frequency 
+
+All features and ideas for future development are summarised in [Kanban board](https://github.com/users/ivansdivans/projects/2).
+
+This project has [Wiki](https://github.com/ivansdivans/bloom-buddy-mobile/wiki) with working materials (inlcuding brainstorming session notes, wireframes and requirements). 
 
 ## Technologies used
 1. [XCode](https://developer.apple.com/xcode/) - Integrated Development Environment
 2. [Swift](https://developer.apple.com/swift/) - Programming Language
 3. [SwiftUI](https://developer.apple.com/xcode/swiftui/) - User Interface Framework
 4. [CoreML](https://developer.apple.com/documentation/coreml) - Machine Learning Framework
+5. [Kaggle](https://www.kaggle.com/) - plants and flowers datasets 
 
 ## Collaboration rules
 1. Branching strategy - [Trunk-based workflow](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development); create short-lived branches and regularly integrate them into `main` branch
@@ -13,7 +51,5 @@
 5. Development conventions - keep `main` ready-to-deploy at all times; use [feature-flags](https://martinfowler.com/articles/feature-toggles.html) for potentially breaking changes
 6. Testing strategy - meaningful unit tests for each feature and bugfix
 7. Merging policy - mandatory PR, build and unit tests are green, 1 approval; no force pushes
-
-## Credits
-
-This pet project is created by [Daan Brocatus](https://github.com/Inn0) and [Ivans Mihailovs](https://github.com/ivansdivans). Their intention is to practice SwiftUI and try innovative solutions. 
+8. Feature tracking - each feature/bug is registered as an issue in Github and added to project (Kanban board)
+9. Feature prioritisation - issues are priritised based on trafic lights system; focus on mvp related features, highest priority & smallest in size are implemented first
