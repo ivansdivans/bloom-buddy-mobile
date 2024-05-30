@@ -43,6 +43,7 @@
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
 		A9C838A12C08688500958F8F /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C838A02C08688500958F8F /* TodosView.swift */; };
+		A9D8CAEB2C08983200BCE8A4 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
 		A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */; };
 		A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */; };
 		A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */; };
@@ -530,6 +531,7 @@
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
 				A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */,
+				A9D8CAEB2C08983200BCE8A4 /* BloomBuddyMLV1.mlmodel in Sources */,
 				A9E477772BFF51EA007CE870 /* CareSchedule.swift in Sources */,
 				A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */,
 				A9C838A12C08688500958F8F /* TodosView.swift in Sources */,
