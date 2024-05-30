@@ -22,7 +22,6 @@
 		1F6AE02E2BE2340A001C1361 /* LabeledTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE02D2BE2340A001C1361 /* LabeledTextFieldView.swift */; };
 		1F6AE0302BE236B6001C1361 /* LabeledTextAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE02F2BE236B6001C1361 /* LabeledTextAreaView.swift */; };
 		1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AE0312BE23BF1001C1361 /* LabeledEnumPicker.swift */; };
-		1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BBE8C2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel */; };
 		1F83DA4C2BDA53B600429A48 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DA4B2BDA53B600429A48 /* Plant.swift */; };
 		1F83DA562BDA5BF400429A48 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DA552BDA5BF400429A48 /* API.swift */; };
 		1F83DA582BDA734400429A48 /* LocalJSONAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DA572BDA734400429A48 /* LocalJSONAPI.swift */; };
@@ -39,6 +38,7 @@
 		1FF597F92BA2F784007065DE /* PropertyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597F82BA2F784007065DE /* PropertyError.swift */; };
 		1FF597FB2BA30FE7007065DE /* HouseholdEditSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */; };
 		1FF597FD2BA31FE7007065DE /* HouseholdEditConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */; };
+		758FFB9763E301FA51E459BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDF9D25289FBACFEBD1C44A /* LaunchScreen.storyboard */; };
 		A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */; };
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
@@ -109,6 +109,7 @@
 		1FF597F82BA2F784007065DE /* PropertyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyError.swift; sourceTree = "<group>"; };
 		1FF597FA2BA30FE7007065DE /* HouseholdEditSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditSheetView.swift; sourceTree = "<group>"; };
 		1FF597FC2BA31FE7007065DE /* HouseholdEditConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdEditConfigurationView.swift; sourceTree = "<group>"; };
+		8032A319917B6212D621DBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleView.swift; sourceTree = "<group>"; };
 		A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		A9F39A202B8CB00B00432EE1 /* BloomBuddyMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloomBuddyMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F39A242B8CB00B00432EE1 /* BloomBuddyMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileUITests.swift; sourceTree = "<group>"; };
 		A9F39A262B8CB00B00432EE1 /* BloomBuddyMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomBuddyMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDDF9D25289FBACFEBD1C44A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,8 @@
 				A9F39A0E2B8CB00B00432EE1 /* BloomBuddyMobile.entitlements */,
 				A9F39A0F2B8CB00B00432EE1 /* Preview Content */,
 				1F61365E2BB856440048813F /* Constants.swift */,
+				8032A319917B6212D621DBC2 /* Info.plist */,
+				DDDF9D25289FBACFEBD1C44A /* LaunchScreen.storyboard */,
 			);
 			path = BloomBuddyMobile;
 			sourceTree = "<group>";
@@ -434,7 +438,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					A9F39A022B8CB00900432EE1 = {
 						CreatedOnToolsVersion = 15.2;
@@ -477,6 +481,7 @@
 				A9F39A112B8CB00B00432EE1 /* Preview Assets.xcassets in Resources */,
 				A9F39A0D2B8CB00B00432EE1 /* Assets.xcassets in Resources */,
 				1F6AE0192BDFC610001C1361 /* plant-data.json in Resources */,
+				758FFB9763E301FA51E459BC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,13 +530,11 @@
 				A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */,
 				A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */,
 				A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */,
-				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
 				A9E477772BFF51EA007CE870 /* CareSchedule.swift in Sources */,
 				A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */,
 				A9C838A12C08688500958F8F /* TodosView.swift in Sources */,
 				1F6AE0202BDFCAC1001C1361 /* PlantWateringFrequency.swift in Sources */,
 				1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */,
-				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
 				A9E4777B2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift in Sources */,
 				1F6AE0272BDFDED3001C1361 /* PlantConfigurationSheet.swift in Sources */,
 				1FF597F22BA25D0A007065DE /* PlantsGridView.swift in Sources */,
@@ -616,6 +619,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -677,6 +681,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -701,21 +706,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = BloomBuddyMobile/BloomBuddyMobile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BloomBuddyMobile/Preview Content\"";
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloomBuddyMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBuddy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -741,21 +751,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = BloomBuddyMobile/BloomBuddyMobile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BloomBuddyMobile/Preview Content\"";
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloomBuddyMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBuddy;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -783,6 +798,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -806,6 +822,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -828,6 +845,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -850,6 +868,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = YKJSXQP7GK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
