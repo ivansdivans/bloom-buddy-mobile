@@ -106,6 +106,11 @@ class CareScheduleViewModel: ObservableObject {
     }
     
     // MARK: TodoListView
+    enum TodoType {
+        case todo
+        case completed
+    }
+    
     func toggleTodo(_ todo: TodoItem) {
         if let index = careSchedule.todos.firstIndex(where: { $0.id == todo.id }) {
             careSchedule.todos[index].isDone.toggle()

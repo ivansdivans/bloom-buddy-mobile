@@ -42,6 +42,7 @@
 		A97907472B9E3D8C0084C2D4 /* CareScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */; };
 		A97907492B9E3DBB0084C2D4 /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */; };
 		A979074B2B9E3DEF0084C2D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */; };
+		A9C838A12C08688500958F8F /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C838A02C08688500958F8F /* TodosView.swift */; };
 		A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */; };
 		A9DBE6B62BC3357B001EA129 /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */; };
 		A9DBE6B82BC40C7C001EA129 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */; };
@@ -111,6 +112,7 @@
 		A97907462B9E3D8C0084C2D4 /* CareScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleView.swift; sourceTree = "<group>"; };
 		A97907482B9E3DBB0084C2D4 /* HouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdView.swift; sourceTree = "<group>"; };
 		A979074A2B9E3DEF0084C2D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9C838A02C08688500958F8F /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
 		A9DBE6B32BC328EF001EA129 /* CareScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareScheduleViewModel.swift; sourceTree = "<group>"; };
 		A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
 		A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				A9DBE6B52BC3357B001EA129 /* WeekCalendarView.swift */,
 				A9DBE6B72BC40C7C001EA129 /* TodoListView.swift */,
 				A9E4777A2C00B9DA007CE870 /* GenerateCareScheduleSheetView.swift */,
+				A9C838A02C08688500958F8F /* TodosView.swift */,
 			);
 			path = CareSchedule;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
 				A9E477772BFF51EA007CE870 /* CareSchedule.swift in Sources */,
 				A9DBE6B42BC328EF001EA129 /* CareScheduleViewModel.swift in Sources */,
+				A9C838A12C08688500958F8F /* TodosView.swift in Sources */,
 				1F6AE0202BDFCAC1001C1361 /* PlantWateringFrequency.swift in Sources */,
 				1F6AE0322BE23BF1001C1361 /* LabeledEnumPicker.swift in Sources */,
 				1F7BBE8D2BBEA5AE00B6B906 /* BloomBuddyMLV1.mlmodel in Sources */,
