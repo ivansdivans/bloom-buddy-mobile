@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HouseholdView: View {
-    @ObservedObject private var viewModel = HouseholdViewModel()
+    @ObservedObject var viewModel: HouseholdViewModel
     @State private var isRemoving = false
     @State private var isAdding = false
     
@@ -43,19 +43,36 @@ struct HouseholdView: View {
                     })
                 }
             }
-            PlantsGridView(plants: viewModel.household.plants, isRemoving: $isRemoving, removePlant: viewModel.removePlant)
-            Spacer()
-            Button(action: {
-                isAdding.toggle()
-            }, label: {
-                Text("Add a plant")
-                    .frame(maxWidth: .infinity)
-            })
-            .sheet(isPresented: $isAdding) {
-                ImagePicker(selectedImage: $viewModel.selectedImage)
+            if viewModel.household.plants.isEmpty {
+                ContentUnavailableView(
+                    label: {Label("You have no plants yet.\nLet's add one.", systemImage: "plus.circle")},
+                    actions: {
+                        Button(action: {
+                            isAdding.toggle()
+                        }, label: {
+                            Text("Add a plant")
+                        })
+                        .buttonStyle(.borderedProminent)
+                        .padding(.top, 30)
+                        .sheet(isPresented: $isAdding) {
+                            ImagePicker(selectedImage: $viewModel.selectedImage)
+                        }
+                    })
+            } else {
+                PlantsGridView(plants: viewModel.household.plants, isRemoving: $isRemoving, removePlant: viewModel.removePlant)
+                Button(action: {
+                    isAdding.toggle()
+                }, label: {
+                    Text("Add a plant")
+                        .frame(maxWidth: .infinity)
+                })
+                .sheet(isPresented: $isAdding) {
+                    ImagePicker(selectedImage: $viewModel.selectedImage)
+                }
+                .buttonStyle(.borderedProminent)
+                .padding(.horizontal, 10)
             }
-            .buttonStyle(.borderedProminent)
-            .padding(.horizontal, 10)
+            Spacer()
         }
         .padding(10)
         .sheet(isPresented: $viewModel.isConfiguring) {

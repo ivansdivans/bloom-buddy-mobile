@@ -9,6 +9,7 @@ import Foundation
 
 struct TodoItem: Identifiable {
     public let id: Int
+    public var plantNickName: String
     public var title: String
     public var dueDate: Date
     public var isDone: Bool = false

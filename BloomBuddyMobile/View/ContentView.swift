@@ -9,13 +9,19 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @StateObject private var careScheduleViewModel = CareScheduleViewModel()
+    @StateObject private var householdViewModel = HouseholdViewModel()
+    
     var body: some View {
         TabView {
-            CareScheduleView()
+            CareScheduleView(
+                careScheduleViewModel: careScheduleViewModel,
+                householdViewModel: householdViewModel
+            )
                 .tabItem {
                     Label("Care schedule", systemImage: "calendar")
                 }
-            HouseholdView()
+            HouseholdView(viewModel: householdViewModel)
                 .tabItem {
                     Label("Household", systemImage: "house")
                 }
