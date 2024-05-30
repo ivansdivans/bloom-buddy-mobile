@@ -24,10 +24,8 @@ struct GenerateCareScheduleSheetView: View {
                 Spacer()
                 Button("Generate") {
                     dismiss()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        setSelectedPlants(selectedPlants)
-                        generateCareSchedule()
-                    }
+                    setSelectedPlants(selectedPlants)
+                    generateCareSchedule()
                 }
                 .fontWeight(.bold)
                 .disabled(selectedPlants.isEmpty)

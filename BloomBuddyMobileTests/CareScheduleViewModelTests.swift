@@ -106,7 +106,7 @@ final class CareScheduleViewModelTests: XCTestCase {
                 healthStatus: .good
             )
         ]
-        sut.setSelectedPlants(plantsArr: plants)
+        sut.setSelectedPlants(plants: plants)
         XCTAssertEqual(sut.careSchedule.plants, plants)
     }
     
@@ -126,7 +126,7 @@ final class CareScheduleViewModelTests: XCTestCase {
                 healthStatus: .good
             )
         ]
-        sut.setSelectedPlants(plantsArr: plants)
+        sut.setSelectedPlants(plants: plants)
         sut.generateCareSchedule()
         XCTAssertEqual(sut.careSchedule.todos.count, 4)
         XCTAssertEqual(sut.careSchedule.todos[0].title, "Water Frost")
@@ -155,7 +155,7 @@ final class CareScheduleViewModelTests: XCTestCase {
                 healthStatus: .good
             )
         ]
-        sut.setSelectedPlants(plantsArr: plants)
+        sut.setSelectedPlants(plants: plants)
         sut.generateCareSchedule()
         let testDate = Calendar.current.date(byAdding: .day, value: 1, to: Date()) ?? Date()
         XCTAssertTrue(sut.hasTodos(for: testDate))

@@ -25,8 +25,8 @@ class CareScheduleViewModel: ObservableObject {
     )
     @Published var isCreatingCareSchedule = false
     
-    func setSelectedPlants(plantsArr: [Plant]) -> Void {
-        careSchedule.plants = plantsArr
+    func setSelectedPlants(plants: [Plant]) -> Void {
+        careSchedule.plants = plants
     }
     
     func generateCareSchedule() {

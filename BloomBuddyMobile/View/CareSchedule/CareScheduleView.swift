@@ -26,7 +26,7 @@ struct CareScheduleView: View {
             
             if careScheduleViewModel.careSchedule.plants.isEmpty {
                 ContentUnavailableView(label: {
-                    Label("You don't have \ncare schedule yet", systemImage: "calendar.badge.plus")
+                    Label("You don't have \na care schedule yet", systemImage: "calendar.badge.plus")
                 },
                                        actions: {
                     Button(action: {
@@ -40,7 +40,7 @@ struct CareScheduleView: View {
                         GenerateCareScheduleSheetView(
                             householdViewModel: householdViewModel,
                             setSelectedPlants: { selectedPlants in
-                                careScheduleViewModel.setSelectedPlants(plantsArr: selectedPlants)
+                                careScheduleViewModel.setSelectedPlants(plants: selectedPlants)
                             },
                             generateCareSchedule: careScheduleViewModel.generateCareSchedule
                         )
